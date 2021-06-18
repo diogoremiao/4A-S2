@@ -1,0 +1,32 @@
+\BOOKMARK [0][-]{label:frontpage.0}{Front page}{}% 1
+\BOOKMARK [0][-]{label:contents.0}{Contents}{}% 2
+\BOOKMARK [0][-]{chapter.1}{1 Introdu\347\343o}{}% 3
+\BOOKMARK [0][-]{chapter.2}{2 Setup}{}% 4
+\BOOKMARK [1][-]{section.2.1}{2.1 Web Server}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{2.2 FTP server}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.3}{2.3 NTP Server}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.4}{2.4 Email Server}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.5}{2.5 DNS Cache Server}{chapter.2}% 9
+\BOOKMARK [0][-]{chapter.3}{3 Test Environment}{}% 10
+\BOOKMARK [1][-]{section.3.1}{3.1 Proxy}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.2}{3.2 Servi\347os}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.3}{3.3 Routing}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.4}{3.4 Cronjobs}{chapter.3}% 14
+\BOOKMARK [0][-]{chapter.4}{4 An\341lise de Resultados}{}% 15
+\BOOKMARK [1][-]{section.4.1}{4.1 MRTG}{chapter.4}% 16
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Configura\347\343o}{section.4.1}% 17
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Propriedades da rede}{section.4.1}% 18
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 An\341lise temporal}{section.4.1}% 19
+\BOOKMARK [1][-]{section.4.2}{4.2 NTOP}{chapter.4}% 20
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Configura\347\343o}{section.4.2}% 21
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 An\341lise global}{section.4.2}% 22
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 An\341lise por tipologia}{section.4.2}% 23
+\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 An\341lise temporal}{section.4.2}% 24
+\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5 An\341lise dos Hosts}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.6}{4.2.6 An\341lise dos recursos do Sistema}{section.4.2}% 26
+\BOOKMARK [1][-]{section.4.3}{4.3 Compara\347\343o}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Monitoriza\347\343o de tr\341fego}{section.4.3}% 28
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 User Interface}{section.4.3}% 29
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Use Cases}{section.4.3}% 30
+\BOOKMARK [0][-]{chapter.5}{5 Conclus\343o}{}% 31
+\BOOKMARK [0][-]{chapter*.19}{Bibliografia}{}% 32

@@ -1,0 +1,376 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{temperley2004cognition}{book}{}
+    \name{author}{1}{}{%
+      {{hash=TD}{%
+         family={Temperley},
+         familyi={T\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT press}%
+    }
+    \strng{namehash}{TD1}
+    \strng{fullhash}{TD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{The cognition of basic musical structures}
+    \field{year}{2004}
+  \endentry
+
+  \entry{dparncutt}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PR}{%
+         family={Parncutt},
+         familyi={P\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PR1}
+    \strng{fullhash}{PR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{324\bibrangedash 353}
+    \field{title}{The emotional connotations of major versus minor tonality:
+  One or more origins?}
+    \field{volume}{18}
+    \field{journaltitle}{Musicae Scientiae}
+    \field{year}{2014}
+  \endentry
+
+  \entry{pauws2004musical}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=PS}{%
+         family={Pauws},
+         familyi={P\bibinitperiod},
+         given={Steffen},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PS1}
+    \strng{fullhash}{PS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{ISMIR}
+    \field{title}{Musical key extraction from audio.}
+    \field{year}{2004}
+  \endentry
+
+  \entry{Raffel2016ExtractingGI}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RC}{%
+         family={Raffel},
+         familyi={R\bibinitperiod},
+         given={Colin},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ED}{%
+         family={Ellis},
+         familyi={E\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RCED1}
+    \strng{fullhash}{RCED1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{ISMIR}
+    \field{title}{Extracting Ground-Truth Information from MIDI Files: A
+  MIDIfesto}
+    \field{year}{2016}
+  \endentry
+
+  \entry{krumhansl2001cognitive}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KCL}{%
+         family={Krumhansl},
+         familyi={K\bibinitperiod},
+         given={Carol\bibnamedelima L},
+         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{KCL1}
+    \strng{fullhash}{KCL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Cognitive foundations of musical pitch}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Temperley2004Musicp}{inbook}{}
+    \name{author}{1}{}{%
+      {{hash=TD}{%
+         family={Temperley},
+         familyi={T\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {University of California}%
+    }
+    \strng{namehash}{TD1}
+    \strng{fullhash}{TD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Music Perception: An Interdisciplinary Journal}
+    \field{pages}{65\bibrangedash 100}
+    \field{title}{What's Key for Key? The Krumhansl-Schmuckler Key-Finding
+  Algorithm Reconsidered}
+    \field{year}{1999}
+  \endentry
+
+  \entry{harjagraph}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HOY}{%
+         family={Harja},
+         familyi={H\bibinitperiod},
+         given={Olli\bibnamedelima Yli},
+         giveni={O\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Shmulevich},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HOYSI1}
+    \strng{fullhash}{HOYSI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{GRAPH BASED SMOOTHING OF CLASS DATA WITH APPLICATIONS IN
+  MUSICAL KEY FINDING}
+  \endentry
+
+  \entry{takeuchi1994maximum}{article}{}
+    \name{author}{1}{}{%
+      {{hash=TAH}{%
+         family={Takeuchi},
+         familyi={T\bibinitperiod},
+         given={Annie\bibnamedelima H},
+         giveni={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{TAH1}
+    \strng{fullhash}{TAH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{335\bibrangedash 346}
+    \field{title}{Maximum key-profile correlation (MKC) as a measure of tonal
+  structure in music}
+    \field{volume}{56}
+    \field{journaltitle}{Perception \& Psychophysics}
+    \field{year}{1994}
+  \endentry
+
+  \entry{lee2006automatic}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=LK}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Kyogu},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{LK1}
+    \strng{fullhash}{LK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{ICMC}
+    \field{title}{Automatic chord recognition from audio using enhanced pitch
+  class profile}
+    \field{year}{2006}
+  \endentry
+
+  \entry{chew2000towards}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=CE}{%
+         family={Chew},
+         familyi={C\bibinitperiod},
+         given={Elaine},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CE1}
+    \strng{fullhash}{CE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Towards a mathematical model of tonality}
+    \list{institution}{1}{%
+      {Massachusetts Institute of Technology}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2000}
+  \endentry
+
+  \entry{krumhansl1982tracing}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KCL}{%
+         family={Krumhansl},
+         familyi={K\bibinitperiod},
+         given={Carol\bibnamedelima L},
+         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=KEJ}{%
+         family={Kessler},
+         familyi={K\bibinitperiod},
+         given={Edward\bibnamedelima J},
+         giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Psychological Association}%
+    }
+    \strng{namehash}{KCLKEJ1}
+    \strng{fullhash}{KCLKEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{334}
+    \field{title}{Tracing the dynamic changes in perceived tonal organization
+  in a spatial representation of musical keys.}
+    \field{volume}{89}
+    \field{journaltitle}{Psychological review}
+    \field{year}{1982}
+  \endentry
+
+  \entry{music21}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CMS}{%
+         family={Cuthbert},
+         familyi={C\bibinitperiod},
+         given={Michael\bibnamedelima Scott},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {GitHub}%
+    }
+    \strng{namehash}{CMS1}
+    \strng{fullhash}{CMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://github.com/cuthbertLab/music21}}
+    \field{title}{Music21 -- A Toolkit for Computational Musicology}
+    \field{journaltitle}{GitHub repository}
+    \field{year}{2021}
+  \endentry
+
+  \entry{sapp2011computational}{book}{}
+    \name{author}{1}{}{%
+      {{hash=SCS}{%
+         family={Sapp},
+         familyi={S\bibinitperiod},
+         given={Craig\bibnamedelima Stuart},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Stanford University}%
+    }
+    \strng{namehash}{SCS1}
+    \strng{fullhash}{SCS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Computational methods for the analysis of musical structure}
+    \field{year}{2011}
+  \endentry
+
+  \entry{aarden2003dynamic}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=ABJ}{%
+         family={Aarden},
+         familyi={A\bibinitperiod},
+         given={Bret\bibnamedelima J},
+         giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ABJ1}
+    \strng{fullhash}{ABJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Dynamic melodic expectancy}
+    \list{institution}{1}{%
+      {The Ohio State University}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{2003}
+  \endentry
+
+  \entry{bellmann2005determination}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=BH}{%
+         family={Bellmann},
+         familyi={B\bibinitperiod},
+         given={H{\'e}ctor},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{BH1}
+    \strng{fullhash}{BH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{International Symposium on Computer Music Modeling and
+  Retrieval}
+    \field{pages}{76\bibrangedash 91}
+    \field{title}{About the determination of key of a musical excerpt}
+    \field{year}{2005}
+  \endentry
+
+  \entry{cohen1977tonality}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=CAJ}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Annabel\bibnamedelima J},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CAJ1}
+    \strng{fullhash}{CAJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Second Workshop on Physical and Neuropsychological
+  Foundations of Music, Ossiach, Austria}
+    \field{title}{Tonality and perception: Musical scales prompted by excerpts
+  from Das Wohl-temperierte Clavier of JS Bach}
+    \field{year}{1977}
+  \endentry
+\enddatalist
+\endinput

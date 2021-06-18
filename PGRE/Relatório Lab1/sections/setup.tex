@@ -1,0 +1,47 @@
+\chapter{Setup}
+Neste capítulo vamos abordar o setup de teste que foi utilizado neste trabalho e como foram configuradas as diferentes ferramentas,
+nomeadamente o Apache e o Squid Cache.
+
+\section{Servers HTTP}
+
+\subsection{Apache}
+Neste trabalho é necessário configurar dois websites dinâmicos que vão depois ser acedidos. E necessário que se gerem logs de acesso que irão
+futuramente ser analisados. Neste sentido, foi utilizada a ferramenta sugerida pelo docente, o Apache.
+
+O Apache é um servidor httpd open-source que permite dar deploy de uma forma simples a sites web a partir do computador do utilizador.
+No nosso caso, configuramos dois websites, intuitivamente apelidados de site1 e site2, que foram alojados no tux 13 (172.16.1.13).
+O primeiro site está designado à porta 80, porta \textit{default} para acessos HTTP, e o segundo na porta 81.
+
+Desta forma, para aceder aos websites basta colocar no browser de um computador na mesma rede (irá ser abordado em \ref{proxy})
+o IP 172.16.1.13 e 172.16.1.13:81 respetivamente. Note-se que se coloca ":81" para forçar o browser a aceder por essa porta. 
+Caso contrário, iria optar pela porta predefinida para HTTP.
+
+\subsection{Dynamic Update}
+Hoje em dia é comum implementações de serviços de cache que guardam informação num servidor mais próximo do utilizador,
+muitas vezes no próprio computador. Este serviço serve para diminuir a carga no \textit{host} do website.
+Apesar de ser útil em contexto real, neste trabalho não o é pois impede o registo de todos os acessos aos websites.
+Desta forma, os sites são carregados com conteúdo dinâmico que obriga sempre a aceder ao site através do seu \textit{host}.
+Foi utilizado o code snippet fornecido pelo docente programado em PHP, pelo que foi necessário ativar esta ferramenta no Apache.
+
+\subsection{Logging}
+Tal como indicado previamente, o Apache permite o registo em \textit{logs} dos acessos feitos aos websites.
+Estes logs são cruciais pois vão ser analisados futuramente em \ref{test}. Foram criados dois diretórios diferentes para cada site, 
+cada um contendo o respetivo \textit{access.log} e \textit{error.log}. 
+
+\section{Proxy HTTP} \label{proxy}
+
+\subsection{Squid Cache}
+
+O Squid Cache é um proxy (com funcionalidades de cache) open-source que mais um vez permite alojar um proxy num \textit{host}.
+Os acessos proxy são geralmente feitos através da porta 3128. Neste caso, o IP do computador a alojar o proxy é 192.168.109.11.
+Por isso, para aceder ao proxy, basta escolhermos como IP do proxy 192.168.109.11:3128.
+
+Uma outra funcionalidade do Squid neste trabalho prende-se a estrutura da rede em que este trabalho está a ser desenvolvido.
+O servidor tux onde estão a ser alojados os websites é um subdomain de servidor de bancada onde está a ser alojado o proxy.
+Desta forma, mesmo dentro do VPN institucional, o nosso computador pessoal não consegue aceder diretamente aos sites.
+Para isso é preciso usar o Squid que funciona como um túnel. Desta forma, temos acesso direto aos websites a partir de um computador fora da rede dos tux.
+
+
+\subsection{Logging}
+Tal como o Apache, o Squid também mantém um registo de \textit{logs} com todos os acessos feitos pelo squid, incluíndo o IP de origem e de destino.
+Estes logs irão ser futuramente analisados também.

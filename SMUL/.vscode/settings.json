@@ -1,0 +1,19 @@
+{
+    "python.pythonPath": "/Users/diogoremiao/opt/miniconda3/bin/python",
+    "spellright.language": [
+        "en_GB"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "cSpell.language": "en-GB,pt,pt-PT",
+    "cSpell.words": [
+        "Aard",
+        "Satie",
+        "rach",
+        "tudes",
+        "Études"
+    ]
+}

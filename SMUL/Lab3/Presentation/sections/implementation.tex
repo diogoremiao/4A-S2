@@ -1,0 +1,56 @@
+\section{Implementação}
+\begin{frame}{Implementação}{}
+\begin{itemize}
+  \item Python Music21
+  \item Data Set
+\end{itemize}
+
+\end{frame}
+
+\subsection{Music21}
+\begin{frame}[fragile]{Implementação}{Python Music21}
+    \begin{columns}[]
+      \begin{column}{.4\textwidth}
+        \begin{itemize}
+          \item Porquê Music21?
+          \item Algoritmo de Krumhansl
+          \item Vários perfis tonais
+        \end{itemize}
+    \end{column}
+    \begin{column}{.6\textwidth}
+        \begin{lstlisting}[language=Python, linewidth=0.90\linewidth,basicstyle=\tiny]
+            score = music21.converter.parse('./bach/bwv_A_Major.midi')
+            key = score.analyze('Krumhansl')
+            print('Best Prediction = ', key.tonic.name, key.mode, key.correlationCoefficient)
+            print('Second best Prediction = ', key.alternateInterpretations[0].tonic.name, key.alternateInterpretations[0].mode, key.alternateInterpretations[0].correlationCoefficient)
+            print('Third best Prediction = ', key.alternateInterpretations[1].tonic.name, key.alternateInterpretations[1].mode, key.alternateInterpretations[1].correlationCoefficient)
+            print('Worst Prediction = ', key.alternateInterpretations[22].tonic.name, key.alternateInterpretations[22].mode, key.alternateInterpretations[22].correlationCoefficient)
+        \end{lstlisting}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\subsection{Data Set}
+\begin{frame}{Implementação}{Data Set}
+    \begin{itemize}
+        \item \textit{Prelude \& Fugue} - J.S.Bach
+        \begin{itemize}
+            \item 24 peças
+        \end{itemize}
+        \item \textit{Études} - F.Chopin
+        \begin{itemize}
+            \item 18 peças
+        \end{itemize}
+        \item \textit{Piano Concertos 2 \& 3} - S.Rachmaninov
+        \begin{itemize}
+            \item 3 andamentos para cada concerto
+        \end{itemize}
+        \item Música Contemporânea
+        \begin{itemize}
+            \item Debussy
+            \item Satie
+            \item Ravel
+        \end{itemize}
+        \item Pop
+    \end{itemize}
+\end{frame}

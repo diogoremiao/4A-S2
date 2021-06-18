@@ -1,0 +1,39 @@
+\chapter{Análise comparativa}
+
+Após os testes dos diferentes serviços, é possível fazer uma comparação direta e determinar qual a melhor ferramenta em cada contexto.
+
+
+\section*{Interface gráfica}
+
+O \textbf{Grafana} é a ferramenta que proporciona a melhor experiência gráfica ao utilizador.
+Como uma UI muito focada em gráficos temporais e \textit{gauges}, é bastante fácil e intuitivo rapidamente analisar o estado do sistema.
+
+O \textbf{Zabbix} no entanto também tem uma excelente interface, principalmente com a funcionalidade de construção de mapas que permitem esquematizar a rede e o seu estado.
+Além disso, fornece mais informação, principalmente low-level do que o \textbf{Nagios}.
+
+\section*{Configuração}
+Neste ponto apenas é possível comparar a duas ferramentas usadas.
+A configuração no \textbf{Zabbix} é feita na sua interface Web, pelo que desse modo é muito mais intuitivo e simples modificar e personalizar a ferramenta.
+Apesar do \textbf{Nagios} também ser muito configurável, é preciso modificar os ficheiros .conf diretamente no sistema, o que torna a experiência mais complexa e menos intuitiva.
+
+Outro fator prende-se com abordagem dos templates, que permite anexar rapidamente um conjunto de teste relevantes naquele contexto, por exemplo de um serviço HTTP ou FTP.
+O Nagios por outro lado, obriga a manualmente se configurar cada teste individualmente para cada host, sendo portanto um processo mais moroso.
+
+\section*{Plugins vs Items/Triggers}
+Apesar da configuração do \textbf{Nagios} ser mais complexa, os plugins são mais configuráveis do que os items/triggers do \textbf{Zabbix}.
+
+Quando se define um plugin, mais parâmetros podem ser definidos do que num item.
+O seu output pode também ser analisado mais precisamente, com intervalos de gravidade, por exemplo, de delay grave ou muito grave.
+
+Além disso, é possível importar facilmente novos plugins como foi feito para o SNMP, enquanto que os items do Zabbix são predefinidos no próprio sistema.
+
+\section*{Outras funcionalidades}
+
+Ambos as ferramentas apresentam a funcionalidade de \textbf{Autodiscovery}.
+Esta funcionalidade permite a descoberta de novos hosts que entraram na rede local.
+No entanto, apenas o Nagios XI (pago) tem esta funcionalidade por predefinição, pelo que desse modo é mais fácil configurar no Zabbix.
+
+A nível de \textbf{protocolos de comunicação suportados}, distingui-se o facto do \textbf{Grafana} suportar mais tipos de bases de dados, nomeadamente em cloud como é o caso da AWS e Azure.
+Isto é sem dúvida um fator importante, principalmente para sistemas muito grandes onde é preciso grande capacidade de armazenamento.
+
+Por fim, é possível, quer no Nagios, quer no Zabbix, \textbf{agendar manutenção}, isto é, \textit{downtime} aceitável, aparecendo essa informação disponível na plataforma.

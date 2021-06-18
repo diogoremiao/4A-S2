@@ -1,0 +1,5 @@
+https://ixnfo.com/en/installing-quagga-on-ubuntu-server-18.html
+
+auto-cost reference-bandwidth ref-bw
+
+default-information originate

@@ -1,0 +1,18 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Introdução}{3}{0}{1}
+\beamer@sectionintoc {2}{Fundamentos Teóricos}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Tonalidade}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Tonalidades Próximas}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Técnicas de Identificação}{7}{0}{2}
+\beamer@sectionintoc {3}{Método}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Algoritmo de Krumhansl-Schmukler}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Key Profiles}{10}{0}{3}
+\beamer@subsectionintoc {3}{3}{Exemplo}{11}{0}{3}
+\beamer@sectionintoc {4}{Implementação}{12}{0}{4}
+\beamer@subsectionintoc {4}{1}{Music21}{13}{0}{4}
+\beamer@subsectionintoc {4}{2}{Data Set}{14}{0}{4}
+\beamer@sectionintoc {5}{Resultados}{15}{0}{5}
+\beamer@subsectionintoc {5}{1}{Géneros}{16}{0}{5}
+\beamer@subsectionintoc {5}{2}{Geral}{17}{0}{5}
+\beamer@subsectionintoc {5}{3}{Future Work}{18}{0}{5}
+\beamer@sectionintoc {6}{Conclusão}{19}{0}{6}

@@ -1,0 +1,20 @@
+\chapter{Conclusão}
+
+Com a elaboração deste trabalho, atingimos os nossos objetivos de aprendizagem, nomeadamente a nível de conhecimento do funcionamento da rede e da circulação de tráfego.
+Analisamos também o comportamento dos hosts na rede a nível de tráfego, assim como o funcionamento do router.
+
+Conseguimos configurar diferentes serviços nos nossos hosts, enumerando-se um servidor FTP, um web server, um servidor email, um servidor NTP e um servidor cache DNS.
+
+Relativamente aos programas de monitorização, concluímos que de facto o MRTG e o NTOP têm dois espectros de utilização diferentes.
+O NTOP monitoriza a interface de comunicação, registando todo o tráfego que por ela passa.
+Este serviço cria uma web app com muita informação, onde podemos observar os diferentes serviços e o tráfego que geravam, assim como os hosts que estavam a utilizar a interface para comunicar.
+
+O MRTG por outro lado monitoriza o tráfego que passava pelo router de bancada. Comprovou-se não registar todas as comunicações efetuadas dentro da rede neste caso.
+Apresenta uma webpage simples onde se pode ver gráficos com a evolução temporal do tráfego.
+
+São duas ferramentas diferentes, sendo o MRTG claramente mais simples, com uma configuração mais rápida mas com menos informação disponível.
+O NTOP tem uma UI mais complexa, apresentando mais informação relativamente ao tráfego.
+É de notar que o também é capaz de monitorizar a nível do SNMP como MRTG, sendo por isso uma ferramenta mais poderosa.
+
+
+

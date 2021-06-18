@@ -1,0 +1,61 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{11785_project,times}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+
+
+\title{Project Proposal: Key Detection}
+
+
+\author{
+Diogo Remião \\
+\texttt{up201706373@edu.fe.up.pt} \\
+\AND
+Miguel Pinheiro \\
+\texttt{up201705172@edu.fe.up.pt} \\
+}
+
+\begin{document}
+
+
+\maketitle
+
+\section{Introduction}
+This project consists on the implementation of an algorithm that is able to detect the key in which the song (or excerpt) is being played.
+Being this a very common topic in the multimedia research field, there are multiple algorithms for this purpose.
+
+We chose the Krumhansl-Schmuckler Key-Finding algorithm (\citeauthor{krumhansl}).
+This algorithm analyses all the notes played and arranges them in a distribution.
+Having this information, it then profiles the distribution of the notes and matches it with the key profile with the best similarity.
+
+\section{Software}
+To implement the algorithm, we will make use of Python.
+The are a number of different implementations in Python making use of different key detection algorithms.
+
+The repository which we will be using is \url{https://github.com/cuthbertLab/music21}
+
+This library has the ability to use specify which algorithm we want to use to detect the key, including the Krumhansl.
+
+
+
+\section{Data to be used}
+We make use of excerpts of different songs in which the key is constant, in midi extension.
+This is an easier data set that enables us to do proof of concept.
+Many songs make use of modulation as a composition technique and that would increase the complexity of the project significantly.
+
+
+\section{Evaluation}
+The evaluation of the output of the program can be set in two different parameters (\citeauthor{inproceedings}).
+
+The first is time, in which we evaluate the accuracy of the algorithm based on the length of the sample in seconds.
+
+The second is the accuracy comparing the output considering "understandable" mistakes.
+For example, the output might give the minor / major relative of the main key, as well as the dominant or subdominant key.
+Comparing the percentage of each category might give good insights of the weaknesses of the algorithm.
+
+\nocite{Gjerdingen}
+
+\bibliography{11785_project}
+\bibliographystyle{11785_project}
+
+\end{document}

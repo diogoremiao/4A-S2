@@ -1,0 +1,161 @@
+\section{Implementation} \label{sec:implementation}
+
+Having described the algorithm, the next step is to implement it programmatically.
+This is because if we want to obtain a significant number of results, doing calculations by hand would be impractical.
+
+The implementation was done in Python, a high level programming language, with lots of libraries and tools for multimedia projects.
+We made use of the library \textit{Music21}, a Python-based toolkit for computer-aided musicology \cite{music21}.
+
+This library has a key determination algorithm implemented based on the \textit{Krumhansl-Schmuckler} key determination algorithm.
+This is the one we will be making use in this project.
+
+One advantage of this library is that it allows to specify which key-profiles to use when calculation the correlation with the sample.
+This will allow us to compare different key profiles and their respective accuracy relatively easily.
+For the purpose of the project, we will be explaining in relative detail how to use this library, detailing some classes and functions crucial in this project.
+
+\subsection {music21.stream}
+
+The class \textit{music21.stream} is the fundamental container in \textit{music21}.
+It is in this class where objects may be ordered and/or placed in time based on offsets from the start of this container.
+This means that it basically encodes music elements on a time-based system, effectively creating a file system that the rest of the library can understand.
+
+Although it is possible to "manually" create a \textit{Stream}, defining which notes are to be played, as well as their time-frame, this is not necessary nor recommended.
+What we will be doing in converting a music file into a \textit{Stream} using the function \textit{music21.converter.parse}.
+
+This function accepts a number of symbolic music files, files where the data is structured, and therefore well defined if we know how to read it.
+A few examples can be named like MusicXML, MuseData, Humdrum and most importantly, MIDI.
+
+What is consistent amongst all these file types is that, although they store musical data, \textbf{none of them are in fact audio files}.
+Although audio files, such as MP3 and WAV, enables us to play music in virtually any device, it does not contain any information regarding what is actually being played, 
+i.e, we do not know whether a piano or a flute is playing simply by reading the file. This makes it very difficult to extract information like which notes are being played,
+which is the essence of key determination for example.
+
+For this matter, we use file types like MIDI, where all this information is available directly, simplifying significantly the process.
+By parsing a MIDI file into a \textit{Stream}, we are know able to make use of the library's analyses function.
+It is important to note that some equalization in applied in order to improve the algorithm's efficiency.
+However, most excerpts will be unaffected as this equalization is done using a very high tempo subdivision.
+
+\subsection{music21.analysis.discrete.KeyWeightKeyAnalysis} \label{sec:analysis_discrete}
+
+Once we have created a \textbf{Stream} based on a MIDI file, we can now apply analysis tools to obtain different parameters.
+One of such tools is the \textit{KeyWeightKeyAnalysis}, the implementation of the key determination algorithm.
+
+To be precise, this class does not exist, i.e, you cannot define an object using this class. It is what is called a base class.
+This means that for example classes \textit{...discrete.a} and \textit{...discrete.b}, both subclasses of \textit{...discrete.KeyWeightKeyAnalysis},
+inherit the same base functions, although they can have specific functions for them.
+
+The subclasses in this case will different key-profiles alternatives that can be applied in the algorithm:
+\begin{itemize}
+    \item SimpleWeights - Implementation of simple weights by Craig Sapp \cite{sapp2011computational}
+    \item AardenEssen - Implementation of Aarden-Essen weightings \cite{aarden2003dynamic}
+    \item BellmanBudge - Implementation of Bellman-Budge weightings \cite{bellmann2005determination}
+    \item KrumhanslSchmuckler - Implementation of Krumhansl-Schmuckler/Kessler weightings \cite{krumhansl2001cognitive}
+    \item TemperleyKostkaPayne - Implementation of Temperley-Kostka-Payne weightings \cite{Temperley2004Musicp}
+\end{itemize}
+
+Like mentioned before, this subclasses output a different correlation value as they make use of different key profiles.
+
+Although not necessary, it is possible to see which profiles are being use for both major and minor keys in each implementation, by making use of the function \textit{KeyWeightKeyAnalysis.getWeights(weightType)}.
+For example, this is the output of the Krumhansl-Schmuckler/Kessler weightings, represented in Figure \ref{fig:key_profiles_c}:
+
+\begin{lstlisting}[language=bash]
+    Major Key profile [6.35, 2.23, 3.48, 2.33, 4.38, 4.09, 2.52, 5.19, 2.39, 3.66, 2.29, 2.88]
+    Minor Key profile [6.33, 2.68, 3.52, 5.38, 2.6, 3.53, 2.54, 4.75, 3.98, 2.69, 3.34, 3.17]
+\end{lstlisting}
+
+\subsection{music21.stream.analyze}
+
+Although we can do the analysis by calling \ref{sec:analysis_discrete}, it is easier to simply call \textit{stream.analyze(arg)}.
+This function runs a particular analytical method on the contents of the specified stream to find its key in this case, essentially calling \textit{music21.analysis.discrete.KeyWeightKeyAnalysis} functions.
+For example, \textit{stream.analyze('key')} would output the prediction based on the implementation of Krumhansl-Schmuckler/Kessler weightings, which is the default one.
+Making use of the subclass \textit{music21.analysis.discrete.analyzeStream}, we can specify which implementation we want to use.
+This subclass matches the argument string with the implementations available:
+\begin{itemize}
+    \item analysis.discrete.analyzeStream(s, 'Krumhansl') = stream.analyze('Krumhansl') - Outputs prediction based on Krumhansl profiles
+    \item analysis.discrete.analyzeStream(s, 'Temperley') = stream.analyze('Temperley') - Outputs prediction based on Temperley profiles
+\end{itemize}
+
+\subsection{music21.key.Key} \label{sec:key}
+
+Independently of the method used to make the prediction the output will be an object of the class \textit{music21.key.Key}.
+As described in the documentation, "Note that a key is a sort of hypothetical/conceptual object.
+It probably has a scale (or scales) associated with it and a KeySignature, but not necessarily".
+
+The \textbf{key signature} is the modification associated with a particular key in comparison to C Major. It is the number of sharps or flats it has.
+For example, G Major's key signature has two sharps (F\# and C\#), while C Major has none.
+
+A \textbf{scale} in the sequence of notes ordered by pitch starting from the key's tonic tonic and ending in the same (octave), taking into account the key signature of said key.
+For example, G Major's scale is "G A B C\# D E F\# G", while C Major's is "C D E F G A B C".
+
+These concepts are usually associated with tonal music, hence the small disclaimer in the documentation.
+As only tonal music will be analysed, both parameters will be defined.
+
+Although the above described functions will already output a \textbf{music21.key.Key} object, one can be easily defined:
+\pagebreak
+
+\begin{lstlisting}[language=bash]
+    >> cm = key.Key('c')  # lowercase = c minor.
+    >> cm
+    <music21.key.Key of c minor>
+    >>cm.mode
+    'minor'
+    >>cm.tonic.name
+    'C'
+    >>cm.sharps
+    -2
+    >>cm.pitches
+    [<music21.pitch.Pitch C4>,
+    <music21.pitch.Pitch D4>,
+    <music21.pitch.Pitch E-4>,
+    <music21.pitch.Pitch F4>,
+    <music21.pitch.Pitch G4>,
+    <music21.pitch.Pitch A-5>,
+    <music21.pitch.Pitch B5>,
+    <music21.pitch.Pitch C5>]
+\end{lstlisting}
+
+As observed, when we define a C Minor key, the object will have an associated key signature, as well as a scale.
+All the returned objects form the analyses will be defined like this one, allowing us to make use of a large set of functions associated with this object.
+
+The most important ones are arguably \textit{key.tonic.name} and \textit{key.mode}, which output the \textbf{pitch} (A, B, C, etc) and the \textbf{mode} (Major or Minor).
+These are the two main parameters that will be used to analyse the precision of the algorithm. In short, \textbf{these define the key of the excerpt}.
+
+Given that these parameters are output as \textit{strings}, a comparison can easily be made with the name of the file, which will contain the key itself (\textbf{Testing} section).
+
+A number of other functions are also useful for this project.
+\textit{key.relative} in a key object containing the relative of the main key. 
+The \textbf{relative} in key that has the shares the same key signature as the main key, except the leading tone.
+For example, the relative of G Major is E Minor, whose only difference is the D\#, the leading tone, which needs to be half-tone higher in minor keys.
+
+Similarly, \textit{key.getDominant()} returns the \textbf{Dominant} pitch of the main key.
+Although the Dominant does not share the same key signature, its tonic chord is a recurring presence in the main key, having therefore big similarities.
+It is important to note that the object returned by this function is not \textit{music21.key.Key} but rather \textit{music21.pitch.Pitch}.
+Although its brings different considerations into play, the dominant chord, and by extrapolation the key, is always major.
+Therefore, we only need to know the pitch, which is similarly obtained using \textit{.name}.
+
+Finally, \textit{key.parallel} returns a key object containing the \textbf{parallel} key of the main key. In short, its is the same pitch with opposite mode (A Major to A Minor).
+The only thing these two keys share it a common tonic note, which can be enough to confuse the algorithm into prediction the parallel instead ot the main key.
+
+The above described functions are the essential ones for this project, giving us all the information we need to make the necessary comparisons.
+However, it is possible to go further into detail, in order to analyse the ambiguity of a prediction, for example.
+In other words, how sure was the algorithm about its prediction: by a landslide, or was it a close match?
+This information in related to the correlation value associated with each key.
+
+This can be obtained using \textit{key.correlationCoefficient} for the chosen key.
+If we want to know the results for the rest of the profiles, \textit{key.alternateInterpretations[n]} is a vector with the (n+2)-est best prediction.
+Each of this entries is of course, a key object, so we can apply all the above functions on them as well:
+
+\begin{lstlisting}[language=bash]
+    Best Prediction =  A major 0.8769757225959743
+    Second best Prediction =  G- minor 0.7810592206505336
+    Third best Prediction =  E major 0.7077655748628783
+    Worst Prediction =  E- major -0.7693194496397553
+\end{lstlisting}
+
+The above textbox shows the output for \textit{Prelude in A Major, J. S. Bach} using the Krumhansl key profile.
+Not only do we see which one was the chosen key, but also the rest of podium, as well as the respective correlation values. 
+
+
+
+
+

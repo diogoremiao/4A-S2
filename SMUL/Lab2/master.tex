@@ -1,0 +1,99 @@
+\documentclass[8pt]{IEEEtran}
+
+\usepackage{xcolor}
+\definecolor{color1}{RGB}{146,212,245}
+\definecolor{color2}{RGB}{78,184,237}
+\definecolor{color3}{RGB}{2,154,229}
+\definecolor{color4}{RGB}{1,108,160}
+\definecolor{color5}{RGB}{0,54,92}
+\definecolor{listbackground}{HTML}{D8F0FB}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Code-block}
+\renewcommand{\lstlistlistingname}{List of \lstlistingname s}
+\usepackage{textcomp}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{inc/listings-golang}
+\usepackage{inc/yaml}
+\usepackage{inc/docker}
+\lstset{
+	backgroundcolor=\color{listbackground},
+	tabsize=4,
+	language=Golang,
+    language=yaml,
+    language=docker,
+    language=docker-compose,
+	rulecolor=,
+	language=matlab,
+        basicstyle=\scriptsize,
+        upquote=true,
+        captionpos=b,
+        aboveskip={1.5\baselineskip},
+        columns=fixed,
+        showstringspaces=false,
+        extendedchars=true,
+        breaklines=true,
+        prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+        frame=single,
+        showtabs=false,
+        showspaces=false,
+        showstringspaces=false,
+        identifierstyle=\ttfamily,
+        keywordstyle=\color[rgb]{0,0,1},
+        commentstyle=\color[rgb]{0.133,0.545,0.133},
+        stringstyle=\color[rgb]{0.627,0.126,0.941},
+}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{glossaries}
+\usepackage{float}
+\usepackage[english]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+\crefname{listing}{Code-block}{Code-block}
+\Crefname{listing}{Code-block}{Code-block}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage[backend=bibtex,
+  bibencoding=utf8,style=ieee]{biblatex}
+\addbibresource{bib/bib}
+
+
+
+\begin{document}
+
+\pagenumbering{roman}
+\title{Assignment GA2. Low-Level features and timbre characterisation}
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+\author{\IEEEauthorblockN{Miguel Pinheiro}
+\IEEEauthorblockA{201705172}
+\and
+\IEEEauthorblockN{Diogo Remião}
+\IEEEauthorblockA{201706373}}
+
+% make the title area
+\maketitle
+
+
+
+\input{sections/test.tex}
+
+
+
+
+
+
+% \section*{Acknowledgments}
+%The authors would like to thank...
+
+
+
+
+\printbibliography[]
+
+\end{document}

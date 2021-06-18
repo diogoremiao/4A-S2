@@ -1,0 +1,46 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introdução}{2}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Setup dos Serviços}{3}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}HTTP Server}{3}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}DNS Server}{4}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}NTP Server}{4}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}FTP Server}{6}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}SNMP}{6}{section.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Email Server}{7}{section.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Nagios}{8}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Instalação e configuração}{9}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Resultados}{12}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Teste de falhas}{13}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Zabbix}{15}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Instalação e configuração}{16}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Resultados}{20}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Teste de falhas}{21}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Outras ferramentas}{23}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Grafana}{23}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}openDCIM}{24}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Análise comparativa}{25}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusão}{27}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{28}{chapter*.22}%

@@ -1,0 +1,26 @@
+\chapter{Test Environment} \label{test}
+Nesta secção vamos explicar como se procedeu para obter os resultados neste trabalho.
+
+\section{Setup}
+Tal como indicado previamente, os dois servidores web estão alojados no tux 172.16.1.13, nas portas 80 e 81.
+
+O proxy Squid tem por predefinição a porta 80 aberta mas a porta 81 teve que ser manualmente aberta no ficheiro de configuração do Squid,
+de forma a permitir o acesso ao segundo site.
+
+Os servidores web foram acedidos periodicamente por um outro tux dentro da mesma rede, o 172.16.1.14.
+
+\section{Logging e Cronjobs}
+Os logs de acesso do Apache irão mostrar diferentes tipos de acessos aos dois websites.
+Em primeiro lugar, foram feitos acessos de um computador externo ligado pela rede VPN. Estes acessos foram feitos com o intuito
+de testar o funcionamento das diferentes ferramentas.
+
+Para criar acessos periódicos que criem logs com mais informação útil, foram configurados acessos periódicos do tux 172.16.1.14.
+Este acessos ocorriam inicialmente uma vez por hora durante um dia e 4 vezes por hora no segundo dia.
+Os acessos eram feitos quer diretamente, quer através do proxy, de forma a gerar mais informação.
+Para este efeito forma adicionados Cronjobs à crontab do tux, que são nada mais nada menos que comandos executados pelo computador
+de forma autónoma nos \textit{timestamps} desejados
+
+A razão pela qual não foram gerados mais logs foi o facto de no inicio da semana estes Cronjobs terem sido configurados para correr, 
+e devido a problemas técnicos, houve um wipeout de vários serviços, nomeadamente do proxy. Tivemos então que recomeçar o teste mas com
+menos tempo para gerar os logs devido à data limite de entrega do trabalho. De qualquer modo, a informação gerada foi suficiente
+para obter resultados úteis e proceder à sua análise.

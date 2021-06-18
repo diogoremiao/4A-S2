@@ -1,0 +1,810 @@
+\ifglsentryexists{latex}{}%
+{%
+\gls@defglossaryentry{latex}%
+{%
+name={latex},%
+sort={latex},%
+type={main},%
+first={latex},%
+firstplural={latexs},%
+text={latex},%
+plural={latexs},%
+description={Is a mark up language specially suited for scientific documents},%
+descriptionplural={Is a mark up language specially suited for scientific documents},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gcd}{}%
+{%
+\gls@defglossaryentry{gcd}%
+{%
+name={GCD},%
+sort={GCD},%
+type={main},%
+first={Greatest Common Divisor\glsspace (GCD)},%
+firstplural={Greatest Common Divisors\glsspace (GCDs)},%
+text={GCD},%
+plural={GCDs},%
+description={Greatest Common Divisor},%
+descriptionplural={Greatest Common Divisor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Greatest Common Divisor},%
+longplural={Greatest Common Divisors},%
+short={GCD},%
+shortplural={GCDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mtd}{}%
+{%
+\gls@defglossaryentry{mtd}%
+{%
+name={MTD},%
+sort={MTD},%
+type={main},%
+first={Moving Target Defence\glsspace (MTD)},%
+firstplural={Moving Target Defences\glsspace (MTDs)},%
+text={MTD},%
+plural={MTDs},%
+description={Moving Target Defence},%
+descriptionplural={Moving Target Defence\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Moving Target Defence},%
+longplural={Moving Target Defences},%
+short={MTD},%
+shortplural={MTDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ids}{}%
+{%
+\gls@defglossaryentry{ids}%
+{%
+name={IDS},%
+sort={IDS},%
+type={main},%
+first={Intrusion Detection System\glsspace (IDS)},%
+firstplural={Intrusion Detection Systems\glsspace (IDSs)},%
+text={IDS},%
+plural={IDSs},%
+description={Intrusion Detection System},%
+descriptionplural={Intrusion Detection System\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Intrusion Detection System},%
+longplural={Intrusion Detection Systems},%
+short={IDS},%
+shortplural={IDSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ofrhm}{}%
+{%
+\gls@defglossaryentry{ofrhm}%
+{%
+name={OF-RHM},%
+sort={OF-RHM},%
+type={main},%
+first={OpenFlow Random Host Mutation\glsspace (OF-RHM)},%
+firstplural={OpenFlow Random Host Mutations\glsspace (OF-RHMs)},%
+text={OF-RHM},%
+plural={OF-RHMs},%
+description={OpenFlow Random Host Mutation},%
+descriptionplural={OpenFlow Random Host Mutation\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={OpenFlow Random Host Mutation},%
+longplural={OpenFlow Random Host Mutations},%
+short={OF-RHM},%
+shortplural={OF-RHMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mt6d}{}%
+{%
+\gls@defglossaryentry{mt6d}%
+{%
+name={MT6D},%
+sort={MT6D},%
+type={main},%
+first={Moving Target IPv6 Defence\glsspace (MT6D)},%
+firstplural={Moving Target IPv6 Defences\glsspace (MT6Ds)},%
+text={MT6D},%
+plural={MT6Ds},%
+description={Moving Target IPv6 Defence},%
+descriptionplural={Moving Target IPv6 Defence\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Moving Target IPv6 Defence},%
+longplural={Moving Target IPv6 Defences},%
+short={MT6D},%
+shortplural={MT6Ds},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vbox}{}%
+{%
+\gls@defglossaryentry{vbox}%
+{%
+name={VBox},%
+sort={VBox},%
+type={main},%
+first={VirtualBox\glsspace (VBox)},%
+firstplural={VirtualBoxs\glsspace (VBoxs)},%
+text={VBox},%
+plural={VBoxs},%
+description={VirtualBox},%
+descriptionplural={VirtualBox\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={VirtualBox},%
+longplural={VirtualBoxs},%
+short={VBox},%
+shortplural={VBoxs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dhcp}{}%
+{%
+\gls@defglossaryentry{dhcp}%
+{%
+name={DHCP},%
+sort={DHCP},%
+type={main},%
+first={Dynamic Host Configuration Protocol\glsspace (DHCP)},%
+firstplural={Dynamic Host Configuration Protocols\glsspace (DHCPs)},%
+text={DHCP},%
+plural={DHCPs},%
+description={Dynamic Host Configuration Protocol},%
+descriptionplural={Dynamic Host Configuration Protocol\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Dynamic Host Configuration Protocol},%
+longplural={Dynamic Host Configuration Protocols},%
+short={DHCP},%
+shortplural={DHCPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vlan}{}%
+{%
+\gls@defglossaryentry{vlan}%
+{%
+name={VLAN},%
+sort={VLAN},%
+type={main},%
+first={Virtual Local Area Network\glsspace (VLAN)},%
+firstplural={Virtual Local Area Networks\glsspace (VLANs)},%
+text={VLAN},%
+plural={VLANs},%
+description={Virtual Local Area Network},%
+descriptionplural={Virtual Local Area Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Local Area Network},%
+longplural={Virtual Local Area Networks},%
+short={VLAN},%
+shortplural={VLANs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ip}{}%
+{%
+\gls@defglossaryentry{ip}%
+{%
+name={IP},%
+sort={IP},%
+type={main},%
+first={Internet Protocol\glsspace (IP)},%
+firstplural={Internet Protocols\glsspace (IPs)},%
+text={IP},%
+plural={IPs},%
+description={Internet Protocol},%
+descriptionplural={Internet Protocol\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Internet Protocol},%
+longplural={Internet Protocols},%
+short={IP},%
+shortplural={IPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{arp}{}%
+{%
+\gls@defglossaryentry{arp}%
+{%
+name={ARP},%
+sort={ARP},%
+type={main},%
+first={Address Resolution Protocol\glsspace (ARP)},%
+firstplural={Address Resolution Protocols\glsspace (ARPs)},%
+text={ARP},%
+plural={ARPs},%
+description={Address Resolution Protocol},%
+descriptionplural={Address Resolution Protocol\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Address Resolution Protocol},%
+longplural={Address Resolution Protocols},%
+short={ARP},%
+shortplural={ARPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vm}{}%
+{%
+\gls@defglossaryentry{vm}%
+{%
+name={VM},%
+sort={VM},%
+type={main},%
+first={Virtual Machine\glsspace (VM)},%
+firstplural={Virtual Machines\glsspace (VMs)},%
+text={VM},%
+plural={VMs},%
+description={Virtual Machine},%
+descriptionplural={Virtual Machine\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Machine},%
+longplural={Virtual Machines},%
+short={VM},%
+shortplural={VMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{os}{}%
+{%
+\gls@defglossaryentry{os}%
+{%
+name={OS},%
+sort={OS},%
+type={main},%
+first={Operating System\glsspace (OS)},%
+firstplural={Operating Systems\glsspace (OSs)},%
+text={OS},%
+plural={OSs},%
+description={Operating System},%
+descriptionplural={Operating System\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Operating System},%
+longplural={Operating Systems},%
+short={OS},%
+shortplural={OSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vpn}{}%
+{%
+\gls@defglossaryentry{vpn}%
+{%
+name={VPN},%
+sort={VPN},%
+type={main},%
+first={Virtual Private Network\glsspace (VPN)},%
+firstplural={Virtual Private Networks\glsspace (VPNs)},%
+text={VPN},%
+plural={VPNs},%
+description={Virtual Private Network},%
+descriptionplural={Virtual Private Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Private Network},%
+longplural={Virtual Private Networks},%
+short={VPN},%
+shortplural={VPNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{api}{}%
+{%
+\gls@defglossaryentry{api}%
+{%
+name={API},%
+sort={API},%
+type={main},%
+first={Application Programming Interface\glsspace (API)},%
+firstplural={Application Programming Interfaces\glsspace (APIs)},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interface},%
+descriptionplural={Application Programming Interface\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Programming Interface},%
+longplural={Application Programming Interfaces},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cli}{}%
+{%
+\gls@defglossaryentry{cli}%
+{%
+name={CLI},%
+sort={CLI},%
+type={main},%
+first={Command Line Interface\glsspace (CLI)},%
+firstplural={Command Line Interfaces\glsspace (CLIs)},%
+text={CLI},%
+plural={CLIs},%
+description={Command Line Interface},%
+descriptionplural={Command Line Interface\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Command Line Interface},%
+longplural={Command Line Interfaces},%
+short={CLI},%
+shortplural={CLIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nat}{}%
+{%
+\gls@defglossaryentry{nat}%
+{%
+name={NAT},%
+sort={NAT},%
+type={main},%
+first={Network Address Translation\glsspace (NAT)},%
+firstplural={Network Address Translations\glsspace (NATs)},%
+text={NAT},%
+plural={NATs},%
+description={Network Address Translation},%
+descriptionplural={Network Address Translation\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Network Address Translation},%
+longplural={Network Address Translations},%
+short={NAT},%
+shortplural={NATs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sdn}{}%
+{%
+\gls@defglossaryentry{sdn}%
+{%
+name={SDN},%
+sort={SDN},%
+type={main},%
+first={Sofware Defined Network\glsspace (SDN)},%
+firstplural={Sofware Defined Networks\glsspace (SDNs)},%
+text={SDN},%
+plural={SDNs},%
+description={Sofware Defined Network},%
+descriptionplural={Sofware Defined Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Sofware Defined Network},%
+longplural={Sofware Defined Networks},%
+short={SDN},%
+shortplural={SDNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ovs}{}%
+{%
+\gls@defglossaryentry{ovs}%
+{%
+name={OVS},%
+sort={OVS},%
+type={main},%
+first={Open Virtual Switch\glsspace (OVS)},%
+firstplural={Open Virtual Switchs\glsspace (OVSs)},%
+text={OVS},%
+plural={OVSs},%
+description={Open Virtual Switch},%
+descriptionplural={Open Virtual Switch\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Open Virtual Switch},%
+longplural={Open Virtual Switchs},%
+short={OVS},%
+shortplural={OVSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vde}{}%
+{%
+\gls@defglossaryentry{vde}%
+{%
+name={VDE switch},%
+sort={VDE switch},%
+type={main},%
+first={Virtual Distributed Ethernet switch\glsspace (VDE switch)},%
+firstplural={Virtual Distributed Ethernet switchs\glsspace (VDE switchs)},%
+text={VDE switch},%
+plural={VDE switchs},%
+description={Virtual Distributed Ethernet switch},%
+descriptionplural={Virtual Distributed Ethernet switch\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Distributed Ethernet switch},%
+longplural={Virtual Distributed Ethernet switchs},%
+short={VDE switch},%
+shortplural={VDE switchs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nist}{}%
+{%
+\gls@defglossaryentry{nist}%
+{%
+name={NIST},%
+sort={NIST},%
+type={main},%
+first={National Institute of Standards and Technology\glsspace (NIST)},%
+firstplural={National Institute of Standards and Technologys\glsspace (NISTs)},%
+text={NIST},%
+plural={NISTs},%
+description={National Institute of Standards and Technology},%
+descriptionplural={National Institute of Standards and Technology\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={National Institute of Standards and Technology},%
+longplural={National Institute of Standards and Technologys},%
+short={NIST},%
+shortplural={NISTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vnet}{}%
+{%
+\gls@defglossaryentry{vnet}%
+{%
+name={VNET},%
+sort={VNET},%
+type={main},%
+first={Virtual Network\glsspace (VNET)},%
+firstplural={Virtual Networks\glsspace (VNETs)},%
+text={VNET},%
+plural={VNETs},%
+description={Virtual Network},%
+descriptionplural={Virtual Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Network},%
+longplural={Virtual Networks},%
+short={VNET},%
+shortplural={VNETs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{toml}{}%
+{%
+\gls@defglossaryentry{toml}%
+{%
+name={TOML},%
+sort={TOML},%
+type={main},%
+first={Tom's Obvious Minimal Language\glsspace (TOML)},%
+firstplural={Tom's Obvious Minimal Languages\glsspace (TOMLs)},%
+text={TOML},%
+plural={TOMLs},%
+description={Tom's Obvious Minimal Language},%
+descriptionplural={Tom's Obvious Minimal Language\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Tom's Obvious Minimal Language},%
+longplural={Tom's Obvious Minimal Languages},%
+short={TOML},%
+shortplural={TOMLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{xml}{}%
+{%
+\gls@defglossaryentry{xml}%
+{%
+name={XML},%
+sort={XML},%
+type={main},%
+first={Extensible Markup Language\glsspace (XML)},%
+firstplural={Extensible Markup Languages\glsspace (XMLs)},%
+text={XML},%
+plural={XMLs},%
+description={Extensible Markup Language},%
+descriptionplural={Extensible Markup Language\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Extensible Markup Language},%
+longplural={Extensible Markup Languages},%
+short={XML},%
+shortplural={XMLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{yaml}{}%
+{%
+\gls@defglossaryentry{yaml}%
+{%
+name={YAML},%
+sort={YAML},%
+type={main},%
+first={YAML Ain´t Markup Language\glsspace (YAML)},%
+firstplural={YAML Ain´t Markup Languages\glsspace (YAMLs)},%
+text={YAML},%
+plural={YAMLs},%
+description={YAML Ain´t Markup Language},%
+descriptionplural={YAML Ain´t Markup Language\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={YAML Ain´t Markup Language},%
+longplural={YAML Ain´t Markup Languages},%
+short={YAML},%
+shortplural={YAMLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{json}{}%
+{%
+\gls@defglossaryentry{json}%
+{%
+name={JSON},%
+sort={JSON},%
+type={main},%
+first={JavaScript Object Notation\glsspace (JSON)},%
+firstplural={JavaScript Object Notations\glsspace (JSONs)},%
+text={JSON},%
+plural={JSONs},%
+description={JavaScript Object Notation},%
+descriptionplural={JavaScript Object Notation\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={JavaScript Object Notation},%
+longplural={JavaScript Object Notations},%
+short={JSON},%
+shortplural={JSONs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sn}{}%
+{%
+\gls@defglossaryentry{sn}%
+{%
+name={SN},%
+sort={SN},%
+type={main},%
+first={Shadow Network\glsspace (SN)},%
+firstplural={Shadow Networks\glsspace (SNs)},%
+text={SN},%
+plural={SNs},%
+description={Shadow Network},%
+descriptionplural={Shadow Network\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Shadow Network},%
+longplural={Shadow Networks},%
+short={SN},%
+shortplural={SNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%

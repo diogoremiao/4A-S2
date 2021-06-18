@@ -1,0 +1,190 @@
+\section{Resultados}
+\begin{frame}{Resultados}{}
+    \begin{itemize}
+        \item Performance em diferentes géneros
+        \begin{itemize}
+            \item Bach
+            \item Chopin
+            \item Rach
+            \item Contemp
+            \item Pop
+        \end{itemize}
+        \item Performance geral
+        \item Future Work
+    \end{itemize}
+\end{frame}
+
+\subsection{Géneros}
+\begin{frame}[fragile]{Resultados}{Performance em diferentes géneros}
+    \begin{columns}[]
+        \begin{column}{.50\textwidth}
+
+            \begin{center}
+                \resizebox{.8\textwidth}{!}{
+                \begin{tabular}{|c||c c c c c||} 
+                \hline
+                \textbf{Bach} & Krum & Temp & Bell & Aard & Craig \\
+                \hline\hline
+                Correct & 100 & 100 & 100 & 100 & 100\\ 
+                \hline
+                Relative & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Dominant & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Parallel & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Other & 0 & 0 & 0 & 0 & 0\\
+                \hline
+               \end{tabular}}
+            \end{center}
+
+            \begin{center}
+                \resizebox{.8\textwidth}{!}{
+                \begin{tabular}{|c||c c c c c||} 
+                \hline
+                \textbf{Chopin} & Krum & Temp & Bell & Aard & Craig \\
+                \hline\hline
+                Correct & 94.44 & 94.44 & 94.44 & 94.44 & 100\\ 
+                \hline
+                Relative & 0 & 5.56 & 5.56 & 0 & 0\\
+                \hline
+                Dominant & 5.56 & 0 & 0 & 0 & 0\\
+                \hline
+                Parallel & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Other & 0 & 0 & 0 & 5.56 & 0\\
+                \hline
+               \end{tabular}}
+            \end{center}
+
+            \begin{center}
+                \resizebox{.8\textwidth}{!}{
+                \begin{tabular}{|c||c c c c c||} 
+                \hline
+                \textbf{Rach} & Krum & Temp & Bell & Aard & Craig \\
+                \hline\hline
+                Correct & 16.67 & 33.33 & 33.33 & 33.33 & 33.33\\ 
+                \hline
+                Relative & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Dominant & 0 & 0 & 0 & 16.67 & 0\\
+                \hline
+                Parallel & 16.67 & 0 & 0 & 0 & 0\\
+                \hline
+                Other & 66.67 & 66.67 & 66.67 & 50 & 66.67\\
+                \hline
+               \end{tabular}}
+            \end{center}
+
+        \end{column}
+        \begin{column}{.50\textwidth}
+
+            \begin{center}
+                \resizebox{.8\textwidth}{!}{
+                \begin{tabular}{|c||c c c c c||} 
+                \hline
+                \textbf{Contemp} & Krum & Temp & Bell & Aard & Craig \\
+                \hline\hline
+                Correct & 57.14 & 57.14 & 57.14 & 42.86 & 57.14\\ 
+                \hline
+                Relative & 0 & 0 & 0 & 14.29 & 0\\
+                \hline
+                Dominant & 14.29 & 14.29 & 14.29 & 14.29 & 14.29\\
+                \hline
+                Parallel & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Other & 28.57 & 28.57 & 28.57 & 14.29 & 28.57\\
+                \hline
+               \end{tabular}}
+            \end{center}
+
+            \vspace{0.2cm}
+
+            \begin{center}
+                \resizebox{.8\textwidth}{!}{
+                \begin{tabular}{|c||c c c c c||} 
+                \hline
+                \textbf{Pop} & Krum & Temp & Bell & Aard & Craig \\
+                \hline\hline
+                Correct & 75 & 75 & 100 & 100 & 87.5\\ 
+                \hline
+                Relative & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Dominant & 25 & 0 & 0 & 0 & 0\\
+                \hline
+                Parallel & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Other & 0 & 25 & 0 & 0 & 12.5\\
+                \hline
+               \end{tabular}}
+            \end{center}
+
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\subsection{Geral}
+\begin{frame}{Resultados}{Performance geral}{}
+    \begin{columns}[T]
+         \begin{column}{.3\textwidth}
+            \begin{itemize}
+                \item Melhor Precisão
+                \begin{itemize}
+                    \item Bellmen / Aarden
+                    \item Simple (Craig)
+                \end{itemize}
+                \item Pior Precisão
+                \begin{itemize}
+                    \item Krumhansl
+                    \item Temperley
+                \end{itemize}
+                \item Falhas do Algoritmo
+                \begin{itemize}
+                    \item Modulação é muito comum!
+                    \item Segmentação por tonalidades
+                \end{itemize}
+            \end{itemize}
+         \end{column}
+         \begin{column}{.7\textwidth}
+            \begin{center}
+                \resizebox{.75\textwidth}{!}{
+                \begin{tabular}{|c||c c c c c||} 
+                \hline
+                \textbf{Average} & Krum & Temp & Bell & Aard & Craig \\
+                \hline\hline
+                Correct & 68.65 & 71.98 & 76.98 & 74.13 & 75.59\\ 
+                \hline
+                Relative & 0 & 1.11 & 1.11 & 2.86 & 0\\
+                \hline
+                Dominant & 8.96 & 2.86 & 2.86 & 6.19 & 2.86\\
+                \hline
+                Parallel & 3.33 & 0 & 0 & 0 & 0\\
+                \hline
+                Other & 19.06 & 24.05 & 19.05 & 16.82 & 21.55\\
+                \hline
+               \end{tabular}}
+            \end{center}
+         \end{column}
+     \end{columns}
+
+\end{frame}
+
+\subsection{Future Work}
+\begin{frame}{Resultados}{Future Work}
+    \begin{itemize}
+        \item Mais amostras
+        \begin{itemize}
+            \item Mais Segmentados
+            \item Mais Gêneros
+        \end{itemize}
+        \item Análise Temporal
+        \begin{itemize}
+            \item Precisão do Algoritmo em função da duração da amostra
+        \end{itemize}
+        \item Outros algoritmos de identificação de Tonalidade
+        \begin{itemize}
+            \item E.Chew - Modelo Matemático \textit{Spiral Array}
+        \end{itemize}
+        \item Análise de Audio
+    \end{itemize}
+\end{frame}

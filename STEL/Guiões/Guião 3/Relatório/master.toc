@@ -1,0 +1,22 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Loss system: Erlang-B distribution}{2}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Resultados da Simulação}{2}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Resultados teóricos}{3}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Waiting system with infinite length queue: Erlang-C distribution}{4}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Resultados da Simulação}{4}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Resultados teóricos}{5}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}General case –waiting system with finite length queue}{6}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Resultados da Simulação - Erlang B / Erlang C com fila de espera infinita}{6}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Resultados da Simulação - Erlang C com fila de espera de tamanho L}{7}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Resultados teóricos}{8}{section.3.3}%

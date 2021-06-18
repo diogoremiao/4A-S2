@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Related Work}{}% 2
+\BOOKMARK [1][-]{section.3}{Method}{}% 3
+\BOOKMARK [1][-]{section.4}{Implementation}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{music21.stream}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{music21.analysis.discrete.KeyWeightKeyAnalysis}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{music21.stream.analyze}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.4}{music21.key.Key}{section.4}% 8
+\BOOKMARK [1][-]{section.5}{Evaluation}{}% 9
+\BOOKMARK [2][-]{subsection.5.1}{Data set}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.2}{Analyses Considerations}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.3}{Bach Analyses}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.4}{Chopin Analyses}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.5}{Rachmaninov Analyses}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.6}{Contemporary Analyses}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.7}{Pop Analyses}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.8}{Profile Comparison}{section.5}% 17
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 18

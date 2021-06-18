@@ -1,0 +1,47 @@
+
+\input{setup/preamble.tex}% package inclusion and set up of the document
+\input{setup/hyphenations.tex}%
+\input{setup/macros.tex}% my new macros
+
+% Setup glossary
+\makenoidxglossaries
+\input{setup/glossary.tex}
+
+\begin{document}
+%frontmatter
+\pagestyle{empty} %disable headers and footers
+%\pagenumbering{roman} %use roman page numbering in the frontmatter
+\input{setup/frontpage.tex}
+%\input{setup/colophon.tex}
+%\input{setup/titlepages.tex}
+
+%\cleardoublepage
+%\pdfbookmark[0]{Contents}{label:contents}
+%\pagestyle{fancy} %enable headers and footers again
+%\renewcommand{\contentsname}{Conteúdos}
+%\tableofcontents
+%\listoftodos
+%\input{setup/preface.tex}
+%\cleardoublepage
+%mainmatter
+%\pagenumbering{arabic} %use arabic page numbering in the mainmatter
+
+\input{sections/section.tex}
+
+
+
+
+
+
+%Glossary
+\clearpage
+\printnoidxglossaries
+
+\printbibliography[heading=bibintoc, title={Bibliografia}]
+\label{bib:mybiblio}
+
+\clearpage
+
+\end{document}
+\grid
+\grid

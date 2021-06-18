@@ -1,0 +1,27 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Gjerdingen(1992)]{Gjerdingen}
+Robert Gjerdingen.
+\newblock Cognitive foundations of musical pitch carol l. krumhansl.
+\newblock \emph{Music Perception: An Interdisciplinary Journal}, 9:\penalty0
+  476--492, 07 1992.
+\newblock \doi{10.2307/40285567}.
+
+\bibitem[Pauws(2004)]{inproceedings}
+Steffen Pauws.
+\newblock Musical key extraction from audio.
+\newblock In \emph{{ISMIR} 2004, 5th International Conference on Music
+  Information Retrieval, Barcelona, Spain, October 10-14, 2004, Proceedings},
+  2004.
+
+\bibitem[Temperley(1999)]{krumhansl}
+David Temperley.
+\newblock \emph{Music Perception: An Interdisciplinary Journal}, pp.\  65--100.
+\newblock University of California, 1999.
+
+\end{thebibliography}

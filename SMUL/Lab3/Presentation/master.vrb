@@ -1,0 +1,106 @@
+\frametitle{Resultados}\framesubtitle {Performance em diferentes géneros}
+    \begin{columns}[]
+        \begin{column}{.50\textwidth}
+
+            \begin{center}
+                \resizebox{.8\textwidth}{!}{
+                \begin{tabular}{|c||c c c c c||}
+                \hline
+                \textbf{Bach} & Krum & Temp & Bell & Aard & Craig \\
+                \hline\hline
+                Correct & 100 & 100 & 100 & 100 & 100\\
+                \hline
+                Relative & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Dominant & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Parallel & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Other & 0 & 0 & 0 & 0 & 0\\
+                \hline
+               \end{tabular}}
+            \end{center}
+
+            \begin{center}
+                \resizebox{.8\textwidth}{!}{
+                \begin{tabular}{|c||c c c c c||}
+                \hline
+                \textbf{Chopin} & Krum & Temp & Bell & Aard & Craig \\
+                \hline\hline
+                Correct & 94.44 & 94.44 & 94.44 & 94.44 & 100\\
+                \hline
+                Relative & 0 & 5.56 & 5.56 & 0 & 0\\
+                \hline
+                Dominant & 5.56 & 0 & 0 & 0 & 0\\
+                \hline
+                Parallel & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Other & 0 & 0 & 0 & 5.56 & 0\\
+                \hline
+               \end{tabular}}
+            \end{center}
+
+            \begin{center}
+                \resizebox{.8\textwidth}{!}{
+                \begin{tabular}{|c||c c c c c||}
+                \hline
+                \textbf{Rach} & Krum & Temp & Bell & Aard & Craig \\
+                \hline\hline
+                Correct & 16.67 & 33.33 & 33.33 & 33.33 & 33.33\\
+                \hline
+                Relative & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Dominant & 0 & 0 & 0 & 16.67 & 0\\
+                \hline
+                Parallel & 16.67 & 0 & 0 & 0 & 0\\
+                \hline
+                Other & 66.67 & 66.67 & 66.67 & 50 & 66.67\\
+                \hline
+               \end{tabular}}
+            \end{center}
+
+        \end{column}
+        \begin{column}{.50\textwidth}
+
+            \begin{center}
+                \resizebox{.8\textwidth}{!}{
+                \begin{tabular}{|c||c c c c c||}
+                \hline
+                \textbf{Contemp} & Krum & Temp & Bell & Aard & Craig \\
+                \hline\hline
+                Correct & 57.14 & 57.14 & 57.14 & 42.86 & 57.14\\
+                \hline
+                Relative & 0 & 0 & 0 & 14.29 & 0\\
+                \hline
+                Dominant & 14.29 & 14.29 & 14.29 & 14.29 & 14.29\\
+                \hline
+                Parallel & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Other & 28.57 & 28.57 & 28.57 & 14.29 & 28.57\\
+                \hline
+               \end{tabular}}
+            \end{center}
+
+            \vspace{0.2cm}
+
+            \begin{center}
+                \resizebox{.8\textwidth}{!}{
+                \begin{tabular}{|c||c c c c c||}
+                \hline
+                \textbf{Pop} & Krum & Temp & Bell & Aard & Craig \\
+                \hline\hline
+                Correct & 75 & 75 & 100 & 100 & 87.5\\
+                \hline
+                Relative & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Dominant & 25 & 0 & 0 & 0 & 0\\
+                \hline
+                Parallel & 0 & 0 & 0 & 0 & 0\\
+                \hline
+                Other & 0 & 25 & 0 & 0 & 12.5\\
+                \hline
+               \end{tabular}}
+            \end{center}
+
+        \end{column}
+    \end{columns}

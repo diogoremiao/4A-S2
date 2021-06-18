@@ -1,0 +1,26 @@
+\chapter{Conclusão}
+
+Neste trabalho, começamos por configurar diferentes serviços na bancada, nomeadamente servidores DNS, NTP, FTP, HTTP e Email.
+Nos dispositivos de rede, o switch e router, foi ativado o protocolo SNMP.
+
+Procedeu-se à configuração quer do \textbf{Nagios}, quer do \textbf{Zabbix}.
+Estas ferramentas foram configuradas com o intuito de testar a disponibilidade quer dos próprios sistemas na rede,
+quer dos serviços neles alojados.
+
+Concluíu-se que o processo de configuração no Zabbix é mais simples e intuitivo do que no Nagios.
+Isto deve-se ao facto da configuração no Zabbix ser feita na sua interface Web, ao ponto que no Nagios é feito diretamente editando ficheiros de configuração no sistema.
+No entanto, os \textbf{plugins} do Nagios provaram ser mais versáteis e diversificados do que os \textbf{items} do Zabbix, aumentando a especificidade dos testes executados na rede.
+
+Após o teste de bom funcionamento dos serviços, foram provocadas falhas nos serviços e sistemas,
+e analisado os comportamentos das ferramentas. Ambas as ferramentas apresentaram a informação de forma clara.
+
+Todavia, a interface do Zabbix é visualmente mais apelativa, devido à possibilidade de criar \textbf{dashboards} altamente customizáveis,
+onde o utilizador pode criar mapas interativos que esquematicamente representam a rede e o status dos seus sistemas e serviços.
+
+Finalmente, fez-se uma pequena análise de outras duas ferramentas de monitorização.
+
+O \textbf{Grafana} provou seu uma ferramenta de monitorização poderosa devido à sua UI baseada em gráficos temporais e \textit{gauges}.
+Mostra assim ser uma boa ferramenta complementar para apresentar informação high-level ao utilizador.
+
+O \textbf{openDCIM} é uma ferramenta vocacionada para monitorização de \textit{data centers}, com algumas funcionalidades low-level não oferecidas por outras ferramentas.
+No entanto, fica atrás a nível de UI, assim como uso para generalizado para testes de serviços devido à sua fraca oferta de plugins.

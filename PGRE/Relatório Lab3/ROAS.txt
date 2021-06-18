@@ -1,0 +1,217 @@
+SWITCH
+------------------------------------------------------------
+1º VLAN
+
+conf t
+ vlan 2
+ name Sede
+ exit
+
+ interface Fa0/15
+ switchport access vlan 2
+ exit
+exit
+
+------------------------------------------------------------
+2º VLAN
+
+conf t
+ vlan 3
+ name Armazem
+ exit
+ 
+ interface Fa0/19
+ switchport access vlan 3
+ exit
+exit
+
+------------------------------------------------------------
+3º VLAN
+
+conf t
+ vlan 4
+ name Loja1
+ exit
+ 
+ interface Fa0/23
+ switchport access vlan 4
+ exit
+exit
+
+-----------------------------------------------------------
+4º VLAN
+
+conf t
+ vlan 5
+ name Loja2
+ exit
+ 
+ interface Fa0/22
+ switchport access vlan 5
+ exit
+exit
+
+-----------------------------------------------------------
+5º VLAN
+
+conf t
+ vlan 6
+ name Dmz
+ exit
+ 
+ interface Fa0/18
+ switchport access vlan 6
+ exit
+exit
+
+------------------------------------------------------------
+Trunk
+
+conf t
+ interface GigabitEthernet0/2
+ switchport trunk allowed vlan 1-6
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ exit
+exit
+------------------------------------------------------------
+
+
+
+
+
+
+ROUTER
+------------------------------------------------------------
+1º VLAN 
+
+conf t
+ interface gigabitEthernet0/0.2
+ encapsulation dot1Q 2
+ ip address 192.168.2.230 255.255.255.248
+ exit
+exit
+
+------------------------------------------------------------
+2º VLAN
+
+conf t
+ interface gigabitEthernet0/0.3
+ encapsulation dot1Q 3
+ ip address 192.168.2.222 255.255.255.224
+ exit
+exit
+
+------------------------------------------------------------
+3º VLAN
+
+conf t
+ interface gigabitEthernet0/0.4
+ encapsulation dot1Q 4
+ ip address 192.168.2.30 255.255.255.224
+ exit
+exit
+
+------------------------------------------------------------
+4º VLAN
+
+conf t
+ interface gigabitEthernet0/0.5
+ encapsulation dot1Q 5
+ ip address 192.168.2.62 255.255.255.224
+ exit
+exit
+
+------------------------------------------------------------
+5º VLAN
+
+conf t
+ interface gigabitEthernet0/0.6
+ encapsulation dot1Q 6
+ ip address 20.49.51.174 255.255.255.240
+ exit
+exit
+
+------------------------------------------------------------
+Trunk
+
+conf t
+ interface gigabitEthernet0/0
+ description switch-trunk
+ ip address 172.16.1.19 255.255.255.0
+ duplex auto
+ speed auto
+ exit
+exit
+
+------------------------------------------------------------
+GATEWAY PARA O FIRETUX
+
+conf t
+ ip route 0.0.0.0 0.0.0.0 172.16.1.254
+ exit
+exit
+
+------------------------------------------------------------
+
+
+
+
+
+
+
+GATEWAY EM TODOS OS TUXs
+------------------------------------------------------------
+route add default gw 172.16.1.19
+route del default gw 172.16.1.254
+
+------------------------------------------------------------
+
+
+
+
+
+
+IFCONFIG ETH1 NOS TUXs
+------------------------------------------------------------
+TUX2 armazem
+
+ifconfig eth2 192.168.2.193/27
+
+------------------------------------------------------------
+TUX3 sede
+
+ifconfig eth1 192.168.2.225/29
+ifconfig eth2 20.49.51.161/28
+------------------------------------------------------------
+TUX4 lojas
+
+ifconfig eth1 192.168.2.1/27
+ifconfig eth2 192.168.2.33/27
+
+
+
+
+
+
+NAT
+------------------------------------------------------------
+Router
+
+conf t
+	interface gigabitEthernet0/0
+		ip nat outside
+		exit
+	
+	interface gigabitEthernet0/0.X (X é a interface onde está a DMZ)
+		ip nat inside
+		exit
+	exit
+
+access-list 1 permit 20.49.51.160 0.0.0.15
+
+ip nat inside source list 1 interface gigabitEthernet0/0 overload
+
+------------------------------------------------------------
+
+

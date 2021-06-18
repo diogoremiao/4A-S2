@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for i in 1 {100..1600..100}
+do
+        ./waf --run "scratch/first_study --distance=$i --duration=60"
+        sleep 1m
+done

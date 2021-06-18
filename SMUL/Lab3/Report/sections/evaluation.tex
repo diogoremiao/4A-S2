@@ -1,0 +1,233 @@
+\section{Evaluation} \label{sec:evaluation}
+
+\subsection{Data set} \label{sec:data_set}
+The first aspect to mention is the data set used.
+In order to diversify the test, different sample groups were created and analysed separately.
+This is because, if we are to make a fair judgement on the algorithms precision, we need to understand the theoretical implications each music sample has.
+
+The first sample group is \textbf{J.S.Bach's Well Tempered Clavier}.
+This is a compilation of 24 pieces written for each of the possible keys.
+For this matter, it is an excellent data set as it goes through all possible solutions.
+
+The second sample group in \textbf{F.Chopin's Études}.
+Similarly, these 18 pieces have very diversified keys, presenting a good testing opportunity of the algorithm.
+However, it is important to mention that Chopin and Bach have very different composition techniques.
+This means that both data sets will bring different considerations.
+
+The third sample group is \textbf{S.Rachmaninov's Piano Concertos 2 \& 3}.
+Although this data set only has 6 samples (3 for each \textit{concerto}), they are much longer than previous ones.
+This means that each sample is much more diverse and has more variations , making it much harder for the algorithm to predict the key.
+
+The forth sample group is \textbf{Contemporary Music}, with 7 pieces including Debussy, Ravel and Satie.
+This composers had a different understating of tonality, almost disregarding it.
+In other words, given that the models were based on tonal perception, we expect that the algorithm will not do so well in this data set.
+
+The last sample group is \textbf{Pop Music}, with 8 pieces.
+This genre differs from the rest of the samples, as it is simpler and repetitive, even amongst themselves.
+In fact, the chord progressing is most of the time very simple, consisting on perfect cadences that give away the key instantly.
+Therefore, it is expected that the algorithm will do very well it this case.
+
+\subsection{Analyses Considerations} \label{sec:analyses_considerations}
+As mentioned before, although we will make use of the \citeauthor{krumhansl2001cognitive} algorithm, different key can be used.
+We will test the precision of some of them, which are implemented in library we are using.
+
+The different key profiles we will be testing are the ones mentioned in section \ref{sec:analysis_discrete}.
+
+Not only will we evaluate the precision of the algorithm, i.e., if it predicted the right answer, but also analyse the wrong answers.
+As mentioned in \ref{sec:key}, some key profiles are very similar to each other, namely:
+\begin{itemize}
+    \item Relative
+    \item Dominant
+    \item Parallel
+\end{itemize}
+
+Although still wrong answer, they are understandable mistakes because of the similarity, and analysing the excerpt might gives us some insights on the algorithm's output.
+
+\subsection{Bach Analyses} \label{sec:bach}
+
+\begin{center}
+    \begin{tabular}{|c||c c c c c||} 
+    \hline
+    \% & Krum & Temp & Bell & Aard & Craig \\
+    \hline\hline
+    Correct & 100 & 100 & 100 & 100 & 100\\ 
+    \hline
+    Relative & 0 & 0 & 0 & 0 & 0\\
+    \hline
+    Dominant & 0 & 0 & 0 & 0 & 0\\
+    \hline
+    Parallel & 0 & 0 & 0 & 0 & 0\\
+    \hline
+    Other & 0 & 0 & 0 & 0 & 0\\
+    \hline
+   \end{tabular}
+\end{center}
+
+As we can observe from the table above, all the algorithms have 100\% accuracy. This is more-less to be expected.
+The composition style in this pieces is very uniform. 
+Perfect cadences are executed multiple times during the piece.
+Perfect cadences correspond to the chord progression I - IV - V -I, which have all the major pitches in that key.
+This way, because this pitches have a much higher weight in the analyses it will be easier to identify the key.
+
+Another aspect to take consideration is modulations. Modulations consists in changing the main key of a section of the piece.
+Bach often makes use of a modulation technique called \textit{Circle of fifths}.
+This technique enables to modulation to many keys seamlessly to closely related keys.
+These keys share many notes, and therefore do not impact much the prediction unless they are used very often.
+
+Preludes should also be easier to analyse than Fugues, and in this case they were analysed together.
+
+\subsection{Chopin Analyses} \label{sec:chopin}
+
+\begin{center}
+    \begin{tabular}{|c||c c c c c||} 
+    \hline
+    \% & Krum & Temp & Bell & Aard & Craig \\
+    \hline\hline
+    Correct & 94.44 & 94.44 & 94.44 & 94.44 & 100\\ 
+    \hline
+    Relative & 0 & 5.56 & 5.56 & 0 & 0\\
+    \hline
+    Dominant & 5.56 & 0 & 0 & 0 & 0\\
+    \hline
+    Parallel & 0 & 0 & 0 & 0 & 0\\
+    \hline
+    Other & 0 & 0 & 0 & 5.56 & 0\\
+    \hline
+   \end{tabular}
+\end{center}
+
+Although from a different age than Bach (Baroque), Chopin (Romantic) composed based on tonal rules and very fluently melodies and chords.
+These meant that modulating were once again often used with closely related keys, like Dominant, sub-dominant and relative keys.
+In these pieces in particular, modulating sections were long.
+
+This explains while we see some predictions falling in other categories (the "other" prediction in "Aarden" was in fact to the sub-dominant).
+It also needs to be taken into account that \textit{Études} are composed to train technique, often being simpler in terms of melody and harmonization.
+These factors of course make it easier for the algorithm to work.
+
+
+\subsection{Rachmaninov Analyses} \label{sec:rach}
+
+\begin{center}
+    \begin{tabular}{|c||c c c c c||} 
+    \hline
+    \% & Krum & Temp & Bell & Aard & Craig \\
+    \hline\hline
+    Correct & 16.67 & 33.33 & 33.33 & 33.33 & 33.33\\ 
+    \hline
+    Relative & 0 & 0 & 0 & 0 & 0\\
+    \hline
+    Dominant & 0 & 0 & 0 & 16.67 & 0\\
+    \hline
+    Parallel & 16.67 & 0 & 0 & 0 & 0\\
+    \hline
+    Other & 66.67 & 66.67 & 66.67 & 50 & 66.67\\
+    \hline
+   \end{tabular}
+\end{center}
+
+Rachmaninov piano concertos are the climax of the romantic period.
+A period defined by emotions and a megalomaniacal Russian culture result in very intense and diverse music,
+with these piano concertos being arguably the best representation of that.
+Being such long pieces, we can identify different parts using different keys, techniques and tempos.
+We can define these pieces as literally "All over the place" in terms on music composition.
+
+Therefore, it is understandable the difficulty the algorithms have in correctly predicting the answer.
+This category was in fact selected precisely to prove the major flaw in Krumhansl approach: no segmentation of the pieces.
+When you have a long piece that modulates into different keys for long periods of time, it is impossible to predict the main key using this algorithm.
+In fact it does not even make any sense to analyse these pieces in such a generic way, as their complexity calls for a more local approach.
+
+
+\subsection{Contemporary Analyses} \label{sec:contemp}
+
+\begin{center}
+    \begin{tabular}{|c||c c c c c||} 
+    \hline
+    \% & Krum & Temp & Bell & Aard & Craig \\
+    \hline\hline
+    Correct & 57.14 & 57.14 & 57.14 & 42.86 & 57.14\\ 
+    \hline
+    Relative & 0 & 0 & 0 & 14.29 & 0\\
+    \hline
+    Dominant & 14.29 & 14.29 & 14.29 & 14.29 & 14.29\\
+    \hline
+    Parallel & 0 & 0 & 0 & 0 & 0\\
+    \hline
+    Other & 28.57 & 28.57 & 28.57 & 14.29 & 28.57\\
+    \hline
+   \end{tabular}
+\end{center}
+
+Contemporary music stands out for not following formal tonal music rules.
+Although the pieces chosen are still from the early part of the movement, we can already identify, for example, that modulations do not make use of any technique in particular.
+The composer bases its composition in the sonic effect rather than the formal modulation techniques.
+For example, cadences are rarely perfect. In fact, tonal chords progressions are very rare.
+
+As we are applying a tonal algorithm to "border-tonal" music, we can accept the 50\% accuracy obtained as a good performance from the algorithms. 
+Especially considering that most mistakes were understandable, predicting the dominant of relative keys which, as explained in section \ref{sec:key}, have very similar profiles.
+\subsection{Pop Analyses} \label{sec:pop}
+
+\begin{center}
+    \begin{tabular}{|c||c c c c c||} 
+    \hline
+    \% & Krum & Temp & Bell & Aard & Craig \\
+    \hline\hline
+    Correct & 75 & 75 & 100 & 100 & 87.5\\ 
+    \hline
+    Relative & 0 & 0 & 0 & 0 & 0\\
+    \hline
+    Dominant & 25 & 0 & 0 & 0 & 0\\
+    \hline
+    Parallel & 0 & 0 & 0 & 0 & 0\\
+    \hline
+    Other & 0 & 25 & 0 & 0 & 12.5\\
+    \hline
+   \end{tabular}
+\end{center}
+
+Pop music, as mentioned before, is very simple and makes use of repetitive chord progressions.
+Modulations are rarely made, and when they are, it is using closely related keys.
+Because these keys all share most pitches in common, some mistakes are understandable.
+However some algorithms got 100\% accuracy, proving that in fact, this is the easiest genre to analyse.
+Bach might seem to be better, but Bach's sample list was bigger than Pop's.
+Therefore a direct comparison is not possible.
+As argument can be made given the fact that analysing by hand a piece of Bach might take a day, while Pop music takes 1 minute.
+
+
+
+\subsection{Profile Comparison} \label{sec:total_analyses}
+
+\begin{center}
+    \begin{tabular}{|c||c c c c c||} 
+    \hline
+    \% & Krum & Temp & Bell & Aard & Craig \\
+    \hline\hline
+    Correct & 68.65 & 71.98 & 76.98 & 74.13 & 75.59\\ 
+    \hline
+    Relative & 0 & 1.11 & 1.11 & 2.86 & 0\\
+    \hline
+    Dominant & 8.96 & 2.86 & 2.86 & 6.19 & 2.86\\
+    \hline
+    Parallel & 3.33 & 0 & 0 & 0 & 0\\
+    \hline
+    Other & 19.06 & 24.05 & 19.05 & 16.82 & 21.55\\
+    \hline
+   \end{tabular}
+\end{center}
+
+Comparing the average performance of the different algorithms, the original algorithm, Krumhansl, has the worst performance,
+while Bellman's key profiles have the best results by a significant margin.
+
+The original key profiles were based completely in a subjective analyses done with volunteers based on "sounding nice".
+Although this might work most of the time, it only goes so far, as complex musical properties come into play when the excerpts are more complex.
+It is expected that, with more technology and more research, newer models were suggested after studying the original model and identifying its flaws.
+
+Another aspect to take into consideration is the type of weights given to each key.
+In Krumhansl, the tonic has a weight of 6.35, with the next pitch (not part of the scale of that key) having a weight of 2.23.
+In Aarden, the tonic weights 17.7661, with next pitch weighting 0.145624.
+
+We can see that in Aarden / Bellman profiles, much bigger importance is given to the notes that are part of the scale of that pitch, in contrast with Krumhansl / Temperley.
+This reduces the error caused by ornamentations of passing notes.
+Simple (Craig) profiles give 0 weight to pitches that are not part of the scale and 1 to the ones that are, with the tonic weighting 2.
+
+Given that the sample list is not that extended and/or diverse, the algorithms can be said to be performing at more less the same level,
+with the revisions slightly outperforming in some more complex categories.

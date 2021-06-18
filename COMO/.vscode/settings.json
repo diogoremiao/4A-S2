@@ -1,0 +1,12 @@
+{
+    "python.pythonPath": "venv/bin/python",
+    "spellright.language": [
+        "pt_PT",
+        "en_GB"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ]
+}

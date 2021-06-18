@@ -1,0 +1,26 @@
+\section{Related Work} \label{sec:related}
+
+Like mentioned before, different algorithms were developed with the aim of, via a mathematical model, detect the musical key of a piece of music.
+However, the first aspect to take into considering is the type of analyses we are doing.
+
+One would be to extract directly from an audio sample.
+This is however not the most common method has it involves creating chromagram to extract which notes are being played in each instant \cite{pauws2004musical}.
+This is a more complex method and key detection from musical audio solutions are still limited.
+Furthermore, in the evaluation section, the precision of the extraction of pitches would also have to be considered, adding another complexity layer to the problem.
+
+We therefore opted for extracting the data from MIDI files, where we make use of symbolic data, and therefore obtain ground-true information related to the piece of music \cite{Raffel2016ExtractingGI}.
+This will further considered in the \textbf{Implementation} section.
+
+Having extracted the data, the next step is to apply and algorithm that outputs a prediction.
+The algorithm we will be making use of is the \textbf{Maximum Key-profile Correlation} (MKC) \cite{krumhansl2001cognitive} based on key profiles. This algorithm will be further analysed in the \textbf{Method} section.
+
+A number of studies have made use of this algorithm, or created variations of it, to compute the musical key.
+\cite{Temperley2004Musicp} proposed revised versions of the key profiles initially presented by Krumhansl \cite{krumhansl2001cognitive} in order to improve the accuracy of the algorithm.
+\cite{harjagraph} identifies a possible inaccuracy of the algorithm related to the window size choice, offering as a solution applying filters to smooth out local oscillations and impulses that might affect the accuracy of the algorithm.
+
+Some studies have also used this algorithm for other purposes, like in \cite{takeuchi1994maximum} where MKC is used to measure the tonality, colloquially know as "sounding nice", of a piece of music.
+\cite{lee2006automatic} made use of MKC for chord recognition. This is also based on profiles, with one for each chord just like we would have one for each key.
+
+There are alternatives to the Krumhansl-Schmukler algorithm, like in \cite{chew2000towards},
+where the author makes use of a geometrical representation called the Spiral Array, 
+in which pitches are represented by points on a spiral and determines key with a Center of Effect Generator method.

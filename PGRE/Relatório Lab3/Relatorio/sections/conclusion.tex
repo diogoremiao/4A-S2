@@ -1,0 +1,19 @@
+\chapter{Conclusão} \label{conclusion}
+
+Os objetivos inicialmente propostos foram atingidos.
+Foi elaborada um \textbf{projeto de endereçamento} para a rede que foi aprovado pelo docente.
+
+Consequentemente, foram configuradas as diferentes \textbf{Vlans} e as respetivas \textit{gateways} no router.
+Foram realizados testes \verb|ping| que comprovaram a interconectividade entre os diferentes \textit{hosts} na rede local.
+
+A configuração do \textbf{NAT} foi realizada no intuito de apenas a DMZ conseguir aceder à internet.
+\verb|Pings| a endereços públicos dos diferentes hosts apenas funcionaram na DMZ, como esperado.
+
+Por fim, foram configurados os diferentes servidores DNS na rede.
+Através do comando \verb|dig| foram feitas \textit{queries} para diferentes domínios.
+Observamos que apenas computadores na rede local indicada (192.168.0.0/21) conseguiram resolver os endereços da rede de servidores, da loja, e do armazém.
+
+A DMZ por sua vez, assim como outros domínios internos não autorizados (172.16.0.0/21), apenas conseguiram resolver os domínios da DMZ, não sendo capazes de aceder nem à loja nem ao armazém.
+Isto vai de encontro aos \textit{DNS Records} que foram introduzidos para as diferentes zonas, pelo que mais uma vez se comprovou o funcionamento dos servidores DNS.
+
+Em suma, este trabalho permitiu-nos adquirir novos conhecimentos na gestão e configuração de redes empresariais, aprofundando o nosso domínio na área do \textbf{Software Defined Network}.

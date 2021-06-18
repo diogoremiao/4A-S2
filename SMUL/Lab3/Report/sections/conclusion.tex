@@ -1,0 +1,27 @@
+\section{Conclusion} \label{sec:conclusion}
+
+We start by extracting musical information from the MIDI files and compile it into the libraries \textit{music21.stream} class.
+After this conversion is done, a distribution profile is created with each pitch in the chromatic scale total usage time.
+The Krumhansl algorithm is then applied, where a correlation between previously defined key-profiles for each possible key and the sample are done.
+The highest output is then presented as the determined key.
+
+Five key-profiles proposals were tested, with Bellman-Budge key profiles having the best accuracy, with 76.98\% correct answers
+The oldest and original key profiles proposed by krumhansl-Schmuckler/Kessler had the worst precision of all, with 68.65\% correct answers.
+
+In terms of neighbouring keys, Temperley-Kostka-Payne had the worst performance, with 24.05\% of the answers not falling in neither the tonic, relative, dominant of parallel keys.
+On the other hand, Aarden-Essen key-weightings presented only 16.82\% of answers not falling in neither of the above categories.
+
+In general, the correlation method presented by krumhansl had an average accuracy of 73.466\%.
+
+As far as the comparison with human performance is concerned, with do not have the desired data that to make that analyses.
+One study suggested that musically trained people can identify the correct key in 75\% of the cases, tough after listening only to the first measure \cite{cohen1977tonality}.
+This experiment was also conducted using samples from \textit{J.S.Bach Well Tempered Clavier}, in which algorithms in this paper had 100\% accuracy but could analyse both the \textit{Prelude \& Fugue} to the full extent.
+
+It is also important to know that in order to compare the types of mistakes and approaches from humans and algorithms, further research would be required.
+
+Concluding, we indicate the following weak points in this project:
+\begin{itemize}
+    \item Only the Krumhansl correlation algorithm was tested, with other approaches not taken into consideration
+    \item The number of samples and its diversity is not enough to do a fair comparison between the different key-weightings. More samples would be required to obtain accuracy levels closer to the actual algorithms performance levels.
+    \item The testing was conducted using all the time frame of the pieces. These pieces have different parts that use different keys, so such a simple approach is not fair to evaluate the accuracy of the algorithms. \textit{Rachmaninov's concertos} are a good example of this flaw.
+\end{itemize}

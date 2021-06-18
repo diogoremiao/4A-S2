@@ -1,0 +1,158 @@
+\documentclass[10pt,aspectratio=169]{beamer}
+\usetheme[
+%%% options passed to the outer theme
+%    hidetitle,           % hide the (short) title in the sidebar
+    hideauthor,          % hide the (short) author in the sidebar
+%    hideinstitute,       % hide the (short) institute in the bottom of the sidebar
+%    shownavsym,          % show the navigation symbols
+%    width=2cm,           % width of the sidebar (default is 2 cm)
+    hideothersubsections,% hide all subsections but the subsections in the current section
+%    hideallsubsections,  % hide all subsections
+    right               % right of left position of sidebar (default is right)
+%%% options passed to the color theme
+%    lightheaderbg,       % use a light header background
+  ]{AAUsidebar}
+
+% If you want to change the colors of the various elements in the theme, edit and uncomment the following lines
+% Change the bar and sidebar colors:
+%\setbeamercolor{AAUsidebar}{fg=red!20,bg=red}
+%\setbeamercolor{sidebar}{bg=red!20}
+% Change the color of the structural elements:
+%\setbeamercolor{structure}{fg=red}
+% Change the frame title text color:
+%\setbeamercolor{frametitle}{fg=blue}
+% Change the normal text color background:
+%\setbeamercolor{normal text}{bg=gray!10}
+% ... and you can of course change a lot more - see the beamer user manual.
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{multimedia}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{listings-golang}
+\usepackage{yaml}
+\usepackage{tikz,pgfplots}
+\usepackage{xcolor}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{
+	backgroundcolor=\color{listbackground},
+	tabsize=4,
+	rulecolor=,
+    frame=single,
+	language=matlab,
+        basicstyle=\scriptsize,
+        upquote=true,
+        aboveskip={1.5\baselineskip},
+        columns=fixed,
+        showstringspaces=false,
+        extendedchars=true,
+        breaklines=true,
+        prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+        % frame=single,
+        showtabs=false,
+        showspaces=false,
+        showstringspaces=false,
+        identifierstyle=\ttfamily,
+        keywordstyle=\color[rgb]{0,0,1},
+        commentstyle=\color[rgb]{0.133,0.545,0.133},
+        stringstyle=\color[rgb]{0.627,0.126,0.941},
+}
+\definecolor{feupblue}{RGB}{140,45,25}
+\definecolor{listbackground}{HTML}{D8F0FB}
+\definecolor{color6}{RGB}{242,130,65}
+\definecolor{color1}{RGB}{146,212,245}
+\definecolor{color2}{RGB}{78,184,237}
+\definecolor{color3}{RGB}{2,154,229}
+\definecolor{color4}{RGB}{1,108,160}
+\definecolor{color5}{RGB}{0,54,92}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+\usepackage{helvet}
+
+% colored hyperlinks
+\newcommand{\chref}[2]{%
+  \href{#1}{{\usebeamercolor[bg]{AAUsidebar}#2}}%
+}
+
+\title[Identificação de Tonalidade]% optional, use only with long paper titles
+{Identificação de Tonalidade em ficheiros MIDI}
+\subtitle{Trabalho de Grupo 3}  % could also be a conference name
+
+
+\date{Maio 2021}
+
+\author[Authors in sidebar] % optional, use only with lots of authors
+{
+  Diogo Remião 201706373 \\
+  José Miguel Pinheiro 201705172
+}
+% - Give the names in the same order as they appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation. See the beamer manual for an example
+
+\institute[
+%  {\includegraphics[scale=0.2]{aau_segl}}\\ %insert a company, department or university logo
+  Sistemas Multimédia \\
+  FEUP
+] % optional - is placed in the bottom of the sidebar on every slide
+{% is placed on the title page
+  Sistemas Multimédia \\
+  FEUP
+
+  %there must be an empty line above this line - otherwise some unwanted space is added between the university and the country (I do not know why;( )
+}
+
+
+% specify a logo on the titlepage (you can specify additional logos an include them in
+% institute command below
+\pgfdeclareimage[height=1.5cm]{titlepagelogo}{AAUgraphics/feup_logo} % placed on the title page
+%\pgfdeclareimage[height=1.5cm]{titlepagelogo2}{graphics/aau_logo_new} % placed on the title page
+\titlegraphic{% is placed on the bottom of the title page
+  \pgfuseimage{titlepagelogo}
+%  \hspace{1cm}\pgfuseimage{titlepagelogo2}
+}
+
+
+\begin{document}
+% the titlepage
+{\aauwavesbg%
+\begin{frame}[plain,noframenumbering] % the plain option removes the sidebar and header from the title page
+  \titlepage
+\end{frame}}
+%%%%%%%%%%%%%%%%
+
+% TOC
+\begin{frame}{Agenda}{}
+    \begin{multicols}{2}
+        \setcounter{tocdepth}{2}
+        \tableofcontents
+    \end{multicols}
+\end{frame}
+%%%%%%%%%%%%%%%%
+\input{sections/intro.tex}
+\input{sections/related.tex}
+\input{sections/method.tex}
+\input{sections/implementation.tex}
+\input{sections/results.tex}
+\input{sections/conclusion.tex}
+%%%%%%%%%%%%%%%%
+
+%put in our emails..
+{\aauwavesbg
+\begin{frame}[plain,noframenumbering]
+  \finalpage{
+      {\Large Obrigado e esperamos que tenham gostado!}\\
+      \vspace{5mm}
+      Diogo Remião - \href{mailto:up201706373@edu.fe.up.pt}{{\tt up201706373@edu.fe.up.pt}}\\
+      José Miguel Pinheiro - \href{mailto:up201706172@edu.fe.up.pt}{{\tt up201705172@edu.fe.up.pt}}\\
+  }
+\end{frame}}
+%%%%%%%%%%%%%%%%
+
+\end{document}

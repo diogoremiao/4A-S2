@@ -1,0 +1,8 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "stel_env/bin/python",
+    "cSpell.words": [
+        "Avrg",
+        "guiao"
+    ]
+}

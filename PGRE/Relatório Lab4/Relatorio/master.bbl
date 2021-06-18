@@ -1,0 +1,95 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{ospf}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{IEFT - RFC 2328}
+    \field{note}{[Visitado 05-2021]}
+    \field{title}{OSPF Version 2 Documentation}
+    \verb{url}
+    \verb \url{https://www.ietf.org/rfc/rfc2328.txt}
+    \endverb
+  \endentry
+
+  \entry{bgp}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{IEFT - RFC 1771}
+    \field{note}{[Visitado 05-2021]}
+    \field{title}{A Border Gateway Protocol 4 (BGP-4)}
+    \verb{url}
+    \verb \url{https://www.ietf.org/rfc/rfc1771.txt?number=1771}
+    \endverb
+  \endentry
+
+  \entry{quagga}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{Quagga}
+    \field{note}{[Visitado 05-2021]}
+    \field{title}{Guagga Homepage}
+    \verb{url}
+    \verb \url{https://www.quagga.net/}
+    \endverb
+  \endentry
+
+  \entry{zebra}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{Linux Wireless Access Point HOWTO}
+    \field{note}{[Visitado 05-2021]}
+    \field{title}{Chapter 7. Configuring Routing}
+    \verb{url}
+    \verb \url{http://oob.freeshell.org/nzwireless/routing.html}
+    \endverb
+  \endentry
+
+  \entry{cisco_ospf}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{Cisco Documentation}
+    \field{note}{[Visitado 05-2021]}
+    \field{title}{IP Routing: OSPF Configuration Guide}
+    \verb{url}
+    \verb \url{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_ospf/c
+    \verb onfiguration/xe-16/iro-xe-16-book/iro-cfg.html}
+    \endverb
+  \endentry
+
+  \entry{cisco_bgp}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{Cisco Documentation}
+    \field{note}{[Visitado 05-2021]}
+    \field{title}{IP Routing: BGP Configuration Guide}
+    \verb{url}
+    \verb \url{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_bgp/co
+    \verb nfiguration/xe-16/irg-xe-16-book/configuring-a-basic-bgp-network.html
+    \verb }
+    \endverb
+  \endentry
+
+  \entry{cisco_route_map}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{Cisco Documentation}
+    \field{note}{[Visitado 05-2021]}
+    \field{title}{IP Routing: BGP Configuration Guide, Chapter: BGP Route-Map
+  Continue}
+    \verb{url}
+    \verb \url{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_bgp/co
+    \verb nfiguration/xe-16/irg-xe-16-book/bgp-route-map-continue.html}
+    \endverb
+  \endentry
+\enddatalist
+\endinput

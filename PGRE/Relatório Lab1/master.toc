@@ -1,0 +1,34 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Setup}{2}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Servers HTTP}{2}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.1}Apache}{2}{subsection.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.2}Dynamic Update}{2}{subsection.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.3}Logging}{3}{subsection.1.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Proxy HTTP}{3}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}Squid Cache}{3}{subsection.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Logging}{3}{subsection.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Test Environment}{4}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Setup}{4}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Logging e Cronjobs}{4}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Análise dos Logs}{5}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Webalizer}{5}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}AWStats}{11}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Comparação}{13}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Conclusão}{16}{chapter.4}%

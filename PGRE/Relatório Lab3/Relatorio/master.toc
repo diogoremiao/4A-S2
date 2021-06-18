@@ -1,0 +1,36 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introdução}{2}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Endereçamento}{3}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Atribuição de endereços}{3}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Configuração na bancada}{3}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Switch / Router}{5}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Configuração DNS / Bind9}{9}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Considerações}{9}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Rede de Servidores / DMZ}{9}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Armazém}{11}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Loja}{12}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Configuração do NAT}{14}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Teste da configuração do DNS}{16}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Split DNS}{16}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Loja}{19}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Armazém}{19}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Conclusão}{20}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliografia}{21}{chapter*.26}%

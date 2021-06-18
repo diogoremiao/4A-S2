@@ -1,0 +1,130 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{Apache}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[Visitado 06-2021]}
+    \field{title}{Apache Homepage}
+    \verb{url}
+    \verb \url{https://httpd.apache.org/}
+    \endverb
+  \endentry
+
+  \entry{Bind}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[Visitado 06-2021]}
+    \field{title}{Bind9 Homepage}
+    \verb{url}
+    \verb \url{https://www.bind9.net/}
+    \endverb
+  \endentry
+
+  \entry{NTP}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[Visitado 06-2021]}
+    \field{title}{ntpd - Network Time Protocol (NTP) Daemon}
+    \verb{url}
+    \verb \url{https://docs.ntpsec.org/latest/ntpd.html}
+    \endverb
+  \endentry
+
+  \entry{FTP}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[Visitado 06-2021]}
+    \field{title}{vsftpd Homepage}
+    \verb{url}
+    \verb \url{https://security.appspot.com/vsftpd.html}
+    \endverb
+  \endentry
+
+  \entry{SNMP}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[Visitado 06-2021]}
+    \field{title}{SNMP Configuration Guide Cisco}
+    \verb{url}
+    \verb \url{https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/snmp/configura
+    \verb tion/xe-16/snmp-xe-16-book/nm-snmp-cfg-snmp-support.html}
+    \endverb
+  \endentry
+
+  \entry{Email}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[Visitado 06-2021]}
+    \field{title}{Postfix Ubuntu Documentation}
+    \verb{url}
+    \verb \url{https://ubuntu.com/server/docs/mail-postfix}
+    \endverb
+  \endentry
+
+  \entry{Nagios}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[Visitado 06-2021]}
+    \field{title}{Nagios Core}
+    \verb{url}
+    \verb \url{https://www.nagios.org/projects/nagios-core/}
+    \endverb
+  \endentry
+
+  \entry{Nagios_setup}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[Visitado 06-2021]}
+    \field{title}{Nagios Documentation}
+    \verb{url}
+    \verb \url{https://support.nagios.com/kb/article/nagios-core-installing-nag
+    \verb ios-core-from-source-96.html#Debian}
+    \endverb
+  \endentry
+
+  \entry{Zabbix}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[Visitado 06-2021]}
+    \field{title}{Zannix}
+    \verb{url}
+    \verb \url{https://www.zabbix.com/}
+    \endverb
+  \endentry
+
+  \entry{Zabbix_setup}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[Visitado 06-2021]}
+    \field{title}{Zabbix Documentation}
+    \verb{url}
+    \verb \url{https://www.zabbix.com/documentation/current/manual}
+    \endverb
+  \endentry
+
+  \entry{Grafana}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[Visitado 06-2021]}
+    \field{title}{Grafana}
+    \verb{url}
+    \verb \url{https://grafana.com/}
+    \endverb
+  \endentry
+
+  \entry{openDCIM}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{note}{[Visitado 06-2021]}
+    \field{title}{openDCIM}
+    \verb{url}
+    \verb \url{https://opendcim.org/}
+    \endverb
+  \endentry
+\enddatalist
+\endinput
